@@ -674,73 +674,582 @@ export const data = [
             },
             {
                 "title": "Blue Team",
-                "heroes": [],
-                "villains": [],
-                "locations": [],
+                "heroes": [
+                    {
+                        "name": "Gambit",
+                        "image": ""
+                    },
+                    {
+                        "name": "Rogue",
+                        "image": ""
+                    },
+                    {
+                        "name": "Psylocke",
+                        "image": ""
+                    },
+                    {
+                        "name": "Jubilee",
+                        "image": ""
+                    },
+                    {
+                        "name": "Banshee",
+                        "image": ""
+                    },
+                ],
+                "villains": [
+                    {
+                        "name": "Mister Sinister",
+                        "image": ""
+                    }
+                ],
+                "locations": [
+                    {
+                        "name": "Excalibur Lighthouse",
+                        "image": ""
+                    },
+                    {
+                        "name": "The Savage Land",
+                        "image": ""
+                    },
+                    {
+                        "name": "Madripoor",
+                        "image": ""
+                    },
+                    {
+                        "name": "Mojoverse",
+                        "image": ""
+                    }
+                ],
                 "antiheroes": []
             },
             {
                 "title": "Gold Team",
-                "heroes": [],
-                "villains": [],
-                "locations": [],
+                "heroes": [
+                    {
+                        "name": "Colossus",
+                        "image": ""
+                    },
+                    {
+                        "name": "Iceman",
+                        "image": ""
+                    },
+                    {
+                        "name": "Archangel",
+                        "image": ""
+                    },
+                    {
+                        "name": "Bishop",
+                        "image": ""
+                    },
+                    {
+                        "name": "Forge",
+                        "image": ""
+                    }
+                ],
+                "villains": [
+                    {
+                        "name": "Sebastian Shaw",
+                        "image": ""
+                    },
+                ],
+                "locations": [
+                    {
+                        "name": "Krakoa",
+                        "image": ""
+                    },
+                    {
+                        "name": "Chandrilar (Shi'ar Empire)",
+                        "image": ""
+                    },
+                    {
+                        "name": "Limbo",
+                        "image": ""
+                    },
+                    {
+                        "name": "Hellfire Club Building",
+                        "image": ""
+                    },
+                ],
                 "antiheroes": []
             },
             {
                 "title": "X-Force",
                 "heroes": [],
                 "villains": [],
-                "locations": [],
+                "locations": [
+                    {
+                        "name": "Adirondack Mountains",
+                        "image": ""
+                    },
+                    {
+                        "name": "Morlock Tunnels",
+                        "image": ""
+                    },
+                    {
+                        "name": "Murderworld",
+                        "image": ""
+                    },
+                    {
+                        "name": "Stryfe's Secret Base",
+                        "image": ""
+                    },
+                ],
                 "antiheroes": []
             },
             {
                 "title": "The Horsemen of Apocalypse",
                 "heroes": [],
-                "villains": [],
+                "villains": [
+                    {
+                        "name": "Famine",
+                        "image": ""
+                    },
+                    {
+                        "name": "War",
+                        "image": ""
+                    },
+                    {
+                        "name": "Pestilence",
+                        "image": ""
+                    },
+                    {
+                        "name": "Death",
+                        "image": ""
+                    },
+                ],
                 "locations": [],
-                "antiheroes": []
+                "antiheroes": [
+                    {
+                        "name": "Apocalypse",
+                        "image": ""
+                    }
+                ]
             },
             {
                 "title": "First Class",
-                "heroes": [],
-                "villains": [],
-                "locations": [],
+                "heroes": [
+                    {
+                        "name": "Cyclops (First Class)",
+                        "image": ""
+                    },
+                    {
+                        "name": "Marvel Girl",
+                        "image": ""
+                    },
+                    {
+                        "name": "Beast (First CLass)",
+                        "image": ""
+                    },
+                    {
+                        "name": "Iceman (First Class)",
+                        "image": ""
+                    },
+                    {
+                        "name": "Angel",
+                        "image": ""
+                    },
+                ],
+                "villains": [
+                    {
+                        "name": "Quicksilver",
+                        "image": ""
+                    },
+                    {
+                        "name": "Scarlet Witch",
+                        "image": ""
+                    },
+                ],
+                "locations": [
+                    {
+                        "name": "Cape Citadel",
+                        "image": ""
+                    },
+                    {
+                        "name": "Island M",
+                        "image": ""
+                    },
+                    {
+                        "name": "Xavier's School for Gifted Youngsters",
+                        "image": ""
+                    },
+                ],
                 "antiheroes": []
             },
             {
                 "title": "Days of Future Past",
-                "heroes": [],
-                "villains": [],
+                "heroes": [
+                    {
+                        "name": "Logan",
+                        "image": ""
+                    },
+                ],
+                "villains": [
+                    {
+                        "name": "Nimrod",
+                        "image": ""
+                    },
+                ],
                 "locations": [],
                 "antiheroes": []
             },
             {
                 "title": "Phoenix Five",
-                "heroes": [],
-                "villains": [],
+                "heroes": [
+                    {
+                        "name": "Hope Summers",
+                        "image": ""
+                    },
+                ],
+                "villains": [
+                    {
+                        "name": "Cyclops",
+                        "image": ""
+                    },
+                    {
+                        "name": "Magik",
+                        "image": ""
+                    },
+                    {
+                        "name": "Namor (Phoenix Five)",
+                        "image": ""
+                    },
+                    {
+                        "name": "Colossus",
+                        "image": ""
+                    },
+                    {
+                        "name": "Emma Frost (Phoenix Five)",
+                        "image": ""
+                    },
+                ],
                 "locations": [],
                 "antiheroes": []
             },
             {
                 "title": "Deadpool",
-                "heroes": [],
-                "villains": [],
+                "heroes": [
+                    {
+                        "name": "Deadpool",
+                        "image": ""
+                    },
+                    {
+                        "name": "Lady Deadpool",
+                        "image": ""
+                    },
+                ],
+                "villains": [
+                    {
+                        "name": "Deadpool",
+                        "image": ""
+                    },
+                    {
+                        "name": "Deadpool (Challenge)",
+                        "image": ""
+                    },
+                ],
                 "locations": [],
-                "antiheroes": []
+                "antiheroes": [
+                    {
+                        "name": "Bob, Agent of Hydra",
+                        "image": ""
+                    },
+                ]
             },
             {
                 "title": "Fantastic Four",
-                "heroes": [],
+                "heroes": [
+                    {
+                        "name": "Mister Fantastic",
+                        "image": ""
+                    },
+                    {
+                        "name": "Invisible Woman",
+                        "image": ""
+                    },
+                    {
+                        "name": "Human Torch",
+                        "image": ""
+                    },
+                    {
+                        "name": "The Thing",
+                        "image": ""
+                    },
+                    {
+                        "name": "Silver Surfer",
+                        "image": ""
+                    },
+                ],
                 "villains": [],
-                "locations": [],
-                "antiheroes": []
+                "locations": [
+                    {
+                        "name": "4 Yancy Street",
+                        "image": ""
+                    },
+                    {
+                        "name": "Baxter Building",
+                        "image": ""
+                    },
+                    {
+                        "name": "Mount Wundagore",
+                        "image": ""
+                    },
+                    {
+                        "name": "Latveria",
+                        "image": ""
+                    },
+                ],
+                "antiheroes": [
+                    {
+                        "name": "Doctor Doom",
+                        "image": ""
+                    },
+                ]
             },
             {
                 "title": "Season 2 Stretch Goals",
-                "heroes": [],
-                "villains": [],
+                "heroes": [
+                    {
+                        "name": "Polaris",
+                        "image": ""
+                    },
+                    {
+                        "name": "Feral",
+                        "image": ""
+                    },
+                    {
+                        "name": "Strong Guy",
+                        "image": ""
+                    },
+                    {
+                        "name": "Boom-Boom",
+                        "image": ""
+                    },
+                    {
+                        "name": "Longshot",
+                        "image": ""
+                    },
+                    {
+                        "name": "Dazzler",
+                        "image": ""
+                    },
+                    {
+                        "name": "Sunspot",
+                        "image": ""
+                    },
+                    {
+                        "name": "Magik",
+                        "image": ""
+                    },
+                    {
+                        "name": "Firestar",
+                        "image": ""
+                    },
+                    {
+                        "name": "Warpath",
+                        "image": ""
+                    },
+                    {
+                        "name": "Phoenix",
+                        "image": ""
+                    },
+                    {
+                        "name": "Sunfire",
+                        "image": ""
+                    },
+                    {
+                        "name": "Wolfsbane",
+                        "image": ""
+                    },
+                    {
+                        "name": "Blink",
+                        "image": ""
+                    },
+                    {
+                        "name": "Havok",
+                        "image": ""
+                    },
+                    {
+                        "name": "Fantomex",
+                        "image": ""
+                    },
+                    {
+                        "name": "Captain Britain",
+                        "image": ""
+                    },
+                    {
+                        "name": "Mulitple Man",
+                        "image": ""
+                    },
+                    {
+                        "name": "Weapon X",
+                        "image": ""
+                    },
+                    {
+                        "name": "Pixie",
+                        "image": ""
+                    },
+                    {
+                        "name": "Doop",
+                        "image": ""
+                    },
+                    {
+                        "name": "X-23",
+                        "image": ""
+                    },
+                    {
+                        "name": "Mirage",
+                        "image": ""
+                    },
+                    {
+                        "name": "Warlock",
+                        "image": ""
+                    },
+                    {
+                        "name": "Kitty Pryde",
+                        "image": ""
+                    },
+                    {
+                        "name": "Gwenpool",
+                        "image": ""
+                    },
+                    {
+                        "name": "Guardian",
+                        "image": ""
+                    },
+                    {
+                        "name": "Puck",
+                        "image": ""
+                    },
+                    {
+                        "name": "Northstar",
+                        "image": ""
+                    },
+                    {
+                        "name": "Snowbird",
+                        "image": ""
+                    },
+                    {
+                        "name": "Sasquatch",
+                        "image": ""
+                    },
+                    {
+                        "name": "Nightcrawler",
+                        "image": ""
+                    },
+                    {
+                        "name": "Cloak",
+                        "image": ""
+                    },
+                    {
+                        "name": "Dagger",
+                        "image": ""
+                    },
+                    {
+                        "name": "Storm (Mohawk)",
+                        "image": ""
+                    },
+                    {
+                        "name": "Old Man Logan",
+                        "image": ""
+                    },
+                ],
+                "villains": [
+                    {
+                        "name": "Shadow King",
+                        "image": ""
+                    },
+                    {
+                        "name": "Callisto",
+                        "image": ""
+                    },
+                    {
+                        "name": "Deathbird",
+                        "image": ""
+                    },
+                    {
+                        "name": "Arcade",
+                        "image": ""
+                    },
+                    {
+                        "name": "Lady Deathstrike",
+                        "image": ""
+                    },
+                    {
+                        "name": "Sauron",
+                        "image": ""
+                    },
+                    {
+                        "name": "Silver Samurai",
+                        "image": ""
+                    },
+                    {
+                        "name": "Omega Red",
+                        "image": ""
+                    },
+                    {
+                        "name": "Brood Queen",
+                        "image": ""
+                    },
+                    {
+                        "name": "Mojo",
+                        "image": ""
+                    },
+                    {
+                        "name": "Dark Phoenix",
+                        "image": ""
+                    },
+                    {
+                        "name": "Onslaught",
+                        "image": ""
+                    },
+                    {
+                        "name": "Avalanche",
+                        "image": ""
+                    },
+                    {
+                        "name": "Super Skrull",
+                        "image": ""
+                    },
+                    {
+                        "name": "Mastermind",
+                        "image": ""
+                    },
+                    {
+                        "name": "Toad",
+                        "image": ""
+                    },
+                    {
+                        "name": "Blob",
+                        "image": ""
+                    },
+                    {
+                        "name": "Pyro",
+                        "image": ""
+                    },
+                ],
                 "locations": [],
-                "antiheroes": []
+                "antiheroes": [
+                    {
+                        "name": "Legion",
+                        "image": ""
+                    },
+                    {
+                        "name": "Emma Frost",
+                        "image": ""
+                    },
+                    {
+                        "name": "Namor",
+                        "image": ""
+                    },
+                    {
+                        "name": "Spiral",
+                        "image": ""
+                    },
+                    {
+                        "name": "Marrow",
+                        "image": ""
+                    },
+                ]
             },
         ]
     }

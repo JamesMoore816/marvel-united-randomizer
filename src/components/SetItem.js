@@ -24,7 +24,7 @@ export default function SetItem(props) {
     else if (props.type === "location") {
         backgroundColor = "lightgray"
     }
-    else if (props.type === "antihero") {
+    else if (props.type === "location") {
         backgroundColor = "thistle"
     }
 

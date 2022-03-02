@@ -19,6 +19,10 @@ import Divider from '@mui/material/Divider';
 
 export default function Set(props) {
 
+    const handleSetToggle = () => {
+        console.log("set")
+    }
+
     return (
         <div className="accordion-div">
             <Accordion className="set-accordion" sx={{ width:"100%", maxWidth:450 }}>
@@ -86,7 +90,12 @@ export default function Set(props) {
                 ))}
                     </List>
                 </AccordionDetails>
-            </Accordion><Checkbox className="set-checkbox"></Checkbox>
+            </Accordion>
+            <Checkbox
+                className="set-checkbox"
+                onChange={handleSetToggle(props.title)}
+                // checked={props.checked.indexOf(props.name) !== -1}
+            ></Checkbox>
         </div>
     )
 
