@@ -84,7 +84,8 @@ export const data = [
                         "name": "S.H.I.E.L.D. Headquarters",
                         "image": ""
                     },
-                ]
+                ],
+                "antiheroes": []
             },
             {
                 "title": "Enter the Spider-Verse",
@@ -137,7 +138,8 @@ export const data = [
                         "name": "Midtown High School",
                         "image": ""
                     },
-                ]
+                ],
+                "antiheroes": []
             },
             {
                 "title": "Return of the Sinister Six",
@@ -168,7 +170,8 @@ export const data = [
                         "image": ""
                     },
                 ],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "Rise of the Black Panther",
@@ -217,7 +220,8 @@ export const data = [
                         "name": "Jabari Village",
                         "image": ""
                     },
-                ]
+                ],
+                "antiheroes": []
             },
             {
                 "title": "Tales of Asgard",
@@ -270,7 +274,8 @@ export const data = [
                         "name": "Valhalla",
                         "image": ""
                     },
-                ]
+                ],
+                "antiheroes": []
             },
             {
                 "title": "Guardians of the Galaxy Remix",
@@ -323,7 +328,8 @@ export const data = [
                         "name": "Kyln",
                         "image": ""
                     },
-                ]
+                ],
+                "antiheroes": []
             },
             {
                 "title": "The Infinity Gauntlet",
@@ -391,7 +397,8 @@ export const data = [
                         "name": "Sanctuary",
                         "image": ""
                     },
-                ]
+                ],
+                "antiheroes": []
             },
             {
                 "title": "Season 1 Stretch Goals",
@@ -579,73 +586,161 @@ export const data = [
                         "image": ""
                     },
                 ],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "X-Men Core Set",
-                "heroes": [],
-                "villains": [],
-                "locations": []
+                "heroes": [
+                    {
+                        "name": "Wolverine",
+                        "image": ""
+                    },
+                    {
+                        "name": "Cyclops",
+                        "image": ""
+                    },
+                    {
+                        "name": "Storm",
+                        "image": ""
+                    },
+                    {
+                        "name": "Jean Grey",
+                        "image": ""
+                    },
+                    {
+                        "name": "Beast",
+                        "image": ""
+                    },
+                    {
+                        "name": "Professor X",
+                        "image": ""
+                    }
+                ],
+                "villains": [
+                    {
+                        "name": "Sabretooth",
+                        "image": ""
+                    },
+                    {
+                        "name": "Juggernaut",
+                        "image": ""
+                    }
+                ],
+                "locations": [
+                    {
+                        "name": "Xavier Institute for Higher Learning",
+                        "image": ""
+                    },
+                    {
+                        "name": "Hangar Bay",
+                        "image": ""
+                    },
+                    {
+                        "name": "X-Jet",
+                        "image": ""
+                    },
+                    {
+                        "name": "Asteroid M",
+                        "image": ""
+                    },
+                    {
+                        "name": "Genosha",
+                        "image": ""
+                    },
+                    {
+                        "name": "Muir Island (Mutant Research Facility)",
+                        "image": ""
+                    },
+                    {
+                        "name": "Weapon X Facility",
+                        "image": ""
+                    },
+                    {
+                        "name": "Sentinel Space Station",
+                        "image": ""
+                    }
+                ],
+                "antiheroes": [
+                    {
+                        "name": "Magneto",
+                        "image": ""
+                    },
+                    {
+                        "name": "Mystique",
+                        "image": ""
+                    }
+                ]
             },
             {
                 "title": "Blue Team",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "Gold Team",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "X-Force",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "The Horsemen of Apocalypse",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "First Class",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "Days of Future Past",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "Phoenix Five",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "Deadpool",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "Fantastic Four",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
             {
                 "title": "Season 2 Stretch Goals",
                 "heroes": [],
                 "villains": [],
-                "locations": []
+                "locations": [],
+                "antiheroes": []
             },
         ]
     }

@@ -39,5 +39,17 @@
 
 .set-accordion {
   margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.accordion-div {
+  display: flex;
+  vertical-align: top !important;
+}
+
+.set-checkbox {
+  margin-top: 3px !important;
   margin-right: auto !important;
+  display: inline-block !important;
+  vertical-align: top !important;
 }

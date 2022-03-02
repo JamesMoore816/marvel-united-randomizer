@@ -14,6 +14,19 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react'
 
 export default function SetItem(props) {
+    let backgroundColor = ""
+    if (props.type === "hero") {
+        backgroundColor = "lightblue"
+    }
+    else if (props.type === "villain") {
+        backgroundColor = "lightpink"
+    }
+    else if (props.type === "location") {
+        backgroundColor = "lightgray"
+    }
+    else if (props.type === "antihero") {
+        backgroundColor = "thistle"
+    }
 
     const handleToggle = (value) => () => {
         const currentIndex = props.checked.indexOf(value);
@@ -31,6 +44,7 @@ export default function SetItem(props) {
 
     return (
         <ListItem
+            sx={{backgroundColor:backgroundColor}}
             secondaryAction={
                 <Checkbox
                     edge="end"
