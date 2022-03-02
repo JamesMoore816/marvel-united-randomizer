@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react'
 import SetItem from './SetItem'
+import AntiheroSetItem from './AntiheroSetItem'
 import Divider from '@mui/material/Divider';
 
 
@@ -51,7 +52,7 @@ export default function Set(props) {
                         key={villain.name}
                         name={villain.name}
                         checked={props.villainsChecked}
-                        setchecked={props.setVillainsChecked}
+                        setChecked={props.setVillainsChecked}
                         type="villain"
                     >
                     </SetItem>
@@ -60,14 +61,15 @@ export default function Set(props) {
                     (<> <Divider /> <ListSubheader>Antiheroes</ListSubheader> </>)
                     : <></>}
                 {props.antiheroes.map((antihero) => (
-                    <SetItem
+                    <AntiheroSetItem
                         key={antihero.name}
                         name={antihero.name}
-                        checked={props.antiheroesChecked}
-                        setchecked={props.setAntiheroesChecked}
-                        type="antihero"
+                        heroesChecked={props.heroesChecked}
+                        setHeroesChecked={props.setHeroesChecked}
+                        villainsChecked={props.villainsChecked}
+                        setVillainsChecked={props.setVillainsChecked}
                     >
-                    </SetItem>
+                    </AntiheroSetItem>
                 ))}
                 {props.locations.length >=1 ?
                     (<> <Divider /> <ListSubheader>Locations</ListSubheader> </>)
