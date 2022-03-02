@@ -6,6 +6,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Checkbox from '@mui/material/Checkbox';
 import Avatar from '@mui/material/Avatar';
+import Divider from '@mui/material/Divider';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -47,6 +48,7 @@ export default function SetItem(props) {
     };
 
     return (
+        <>
         <ListItem
             sx={{backgroundColor:backgroundColor}}
             secondaryAction={
@@ -60,10 +62,14 @@ export default function SetItem(props) {
             }>
             <ListItemAvatar>
                 <Avatar
-
+                    sx={{borderStyle:"solid", borderWidth:2, borderColor:"#666666"}}
+                    alt={props.name}
+                    src={props.image}
                 />
             </ListItemAvatar>
             <ListItemText primary={`${props.name}`} />
         </ListItem>
+        {/* <Divider/> */}
+        </>
     )
 }

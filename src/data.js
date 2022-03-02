@@ -3,52 +3,53 @@ export const data = [
         "sets": [
             {
                 "title": "Core Set",
+                "image": "/images/MarvelUnited.png",
                 "heroes": [
                     {
                         "name": "Captain America",
-                        "image": ""
+                        "image": "/images/CaptainAmerica.png"
                     },
                     {
                         "name": "Iron Man",
-                        "image": ""
+                        "image": "/images/IronMan.png"
                     },
                     {
                         "name": "Hulk",
-                        "image": ""
+                        "image": "/images/Hulk.png"
                     },
                     {
                         "name": "Black Widow",
-                        "image": ""
+                        "image": "/images/BlackWidow.png"
                     },
                     {
                         "name": "Captain Marvel",
-                        "image": ""
+                        "image": "/images/CaptainMarvel.png"
                     },
                     {
                         "name": "Ant-Man",
-                        "image": ""
+                        "image": "/images/Ant-Man.png"
                     },
                     {
                         "name": "Wasp",
-                        "image": ""
+                        "image": "/images/Wasp.png"
                     },
                     {
                         "name": "Venom (Walmart Exclusive)",
-                        "image": ""
+                        "image": "/images/Venom.png"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Red Skull",
-                        "image": ""
+                        "image": "/images/RedSkull.png"
                     },
                     {
                         "name": "Ultron",
-                        "image": ""
+                        "image": "/images/Ultron.png"
                     },
                     {
                         "name": "Taskmaster",
-                        "image": ""
+                        "image": "/images/Taskmaster.png"
                     },
                 ],
                 "locations": [
@@ -92,25 +93,25 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Spider-Man",
-                        "image": ""
+                        "image": "/images/Spider-Man.png"
                     },
                     {
                         "name": "Ghost-Spider",
-                        "image": ""
+                        "image": "/images/Ghost-Spider.png"
                     },
                     {
                         "name": "Miles Morales",
-                        "image": ""
+                        "image": "/images/MilesMorales.png"
                     },
                     {
                         "name": "Spider-Ham",
-                        "image": ""
+                        "image": "/images/Spider-Ham.png"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Green Goblin",
-                        "image": ""
+                        "image": "/images/GreenGoblin.png"
                     },
                 ],
                 "locations": [
@@ -147,27 +148,27 @@ export const data = [
                 "villains": [
                     {
                         "name": "Doctor Octopus",
-                        "image": ""
+                        "image": "/images/DoctorOctopus.png"
                     },
                     {
                         "name": "Mysterio",
-                        "image": ""
+                        "image": "/images/Mysterio.png"
                     },
                     {
                         "name": "Kraven",
-                        "image": ""
+                        "image": "/images/Kraven.png"
                     },
                     {
                         "name": "Vulture",
-                        "image": ""
+                        "image": "/images/Vulture.png"
                     },
                     {
                         "name": "Electro",
-                        "image": ""
+                        "image": "/images/Electro.png"
                     },
                     {
                         "name": "Sandman",
-                        "image": ""
+                        "image": "/images/Sandman.png"
                     },
                 ],
                 "locations": [],
@@ -178,21 +179,21 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Black Panther",
-                        "image": ""
+                        "image": "/images/BlackPanther.png"
                     },
                     {
                         "name": "Winter Soldier",
-                        "image": ""
+                        "image": "/images/WinterSoldier.png"
                     },
                     {
                         "name": "Shuri",
-                        "image": ""
+                        "image": "/images/Shuri.png"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Killmonger",
-                        "image": ""
+                        "image": "/images/Killmonger.png"
                     },
                 ],
                 "locations": [
@@ -228,25 +229,25 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Thor",
-                        "image": ""
+                        "image": "/images/Thor.png"
                     },
                     {
                         "name": "Valkyrie",
-                        "image": ""
+                        "image": "/images/Valkyrie.png"
                     },
                     {
                         "name": "Korg",
-                        "image": ""
+                        "image": "/images/Korg.png"
                     },
                     {
                         "name": "Beta Ray Bill",
-                        "image": ""
+                        "image": "/images/BetaRayBill.png"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Loki",
-                        "image": ""
+                        "image": "/images/Loki.png"
                     },
                 ],
                 "locations": [
@@ -281,26 +282,26 @@ export const data = [
                 "title": "Guardians of the Galaxy Remix",
                 "heroes": [
                     {
-                        "name": "Star Lord",
-                        "image": ""
+                        "name": "Star-Lord",
+                        "image": "/images/Star-Lord.png"
                     },
                     {
                         "name": "Rocket",
-                        "image": ""
+                        "image": "/images/Rocket.png"
                     },
                     {
                         "name": "Groot",
-                        "image": ""
+                        "image": "/images/Groot.png"
                     },
                     {
                         "name": "Gamora",
-                        "image": ""
+                        "image": "/images/Gamora.png"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Ronan",
-                        "image": ""
+                        "image": "/images/Ronan.png"
                     },
                 ],
                 "locations": [
@@ -337,19 +338,19 @@ export const data = [
                 "villains": [
                     {
                         "name": "Thanos",
-                        "image": ""
+                        "image": "/images/Thanos.png"
                     },
                     {
                         "name": "Black Dwarf",
-                        "image": ""
+                        "image": "/images/BlackDwarf.png"
                     },
                     {
                         "name": "Ebony Maw",
-                        "image": ""
+                        "image": "/images/EbonyMaw.png"
                     },
                     {
                         "name": "Proxima Midnight",
-                        "image": ""
+                        "image": "/images/ProximaMidnight.png"
                     },
                 ],
                 "locations": [
@@ -405,185 +406,185 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Hawkeye",
-                        "image": ""
+                        "image": "/images/Hawkeye.png"
                     },
                     {
                         "name": "Vision",
-                        "image": ""
+                        "image": "/images/Vision.png"
                     },
                     {
                         "name": "Scarlet Witch",
-                        "image": ""
+                        "image": "/images/ScarletWitch.png"
                     },
                     {
                         "name": "Doctor Strange",
-                        "image": ""
+                        "image": "/images/DoctorStrange.png"
                     },
                     {
                         "name": "War Machine",
-                        "image": ""
+                        "image": "/images/WarMachine.png"
                     },
                     {
                         "name": "Falcon",
-                        "image": ""
+                        "image": "/images/Falcon.png"
                     },
                     {
                         "name": "Squirrel Girl",
-                        "image": ""
+                        "image": "/images/SquirrelGirl.png"
                     },
                     {
                         "name": "Okoye",
-                        "image": ""
+                        "image": "/images/Okoye.png"
                     },
                     {
                         "name": "Nick Fury",
-                        "image": ""
+                        "image": "/images/NickFury.png"
                     },
                     {
                         "name": "Ms. Marvel",
-                        "image": ""
+                        "image": "/images/MsMarvel.png"
                     },
                     {
                         "name": "Daredevil",
-                        "image": ""
+                        "image": "/images/Daredevil.png"
                     },
                     {
                         "name": "Elektra",
-                        "image": ""
+                        "image": "/images/Elektra.png"
                     },
                     {
                         "name": "Iron Fist",
-                        "image": ""
+                        "image": "/images/IronFist.png"
                     },
                     {
                         "name": "Luke Cage",
-                        "image": ""
+                        "image": "/images/LukeCage.png"
                     },
                     {
                         "name": "Punisher",
-                        "image": ""
+                        "image": "/images/Punisher.png"
                     },
                     {
                         "name": "Jessica Jones",
-                        "image": ""
+                        "image": "/images/JessicaJones.png"
                     },
                     {
                         "name": "Mockingbird",
-                        "image": ""
+                        "image": "/images/Mockingbird.png"
                     },
                     {
                         "name": "Spider-Woman",
-                        "image": ""
+                        "image": "/images/Spider-Woman.png"
                     },
                     {
                         "name": "Shang Chi",
-                        "image": ""
+                        "image": "/images/ShangChi.png"
                     },
                     {
                         "name": "Spider-Man 2099",
-                        "image": ""
+                        "image": "/images/Spider-Man2099.png"
                     },
                     {
                         "name": "Venom",
-                        "image": ""
+                        "image": "/images/Venom.png"
                     },
                     {
                         "name": "Black Cat",
-                        "image": ""
+                        "image": "/images/BlackCat.png"
                     },
                     {
                         "name": "America Chavez",
-                        "image": ""
+                        "image": "/images/AmericaChavez.png"
                     },
                     {
                         "name": "She-Hulk",
-                        "image": ""
+                        "image": "/images/She-Hulk.png"
                     },
                     {
                         "name": "Moon Knight",
-                        "image": ""
+                        "image": "/images/MoonKnight.png"
                     },
                     {
                         "name": "Blade",
-                        "image": ""
+                        "image": "/images/Blade.png"
                     },
                     {
                         "name": "Ghost Rider",
-                        "image": ""
+                        "image": "/images/GhostRider.png"
                     },
                     {
                         "name": "Nova",
-                        "image": ""
+                        "image": "/images/Nova.png"
                     },
                     {
                         "name": "Nebula",
-                        "image": ""
+                        "image": "/images/Nebula.png"
                     },
                     {
                         "name": "Mantis",
-                        "image": ""
+                        "image": "/images/Mantis.png"
                     },
                     {
                         "name": "Drax",
-                        "image": ""
+                        "image": "/images/Drax.png"
                     },
                     {
                         "name": "Howard the Duck",
-                        "image": ""
+                        "image": "/images/HowardTheDuck.png"
                     },
                     {
                         "name": "Yondu",
-                        "image": ""
+                        "image": "/images/Yondu.png"
                     },
                     {
                         "name": "Adam Warlock",
-                        "image": ""
+                        "image": "/images/AdamWarlock.png"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Corvus Glaive",
-                        "image": ""
+                        "image": "/images/CorvusGlaive.png"
                     },
                     {
                         "name": "M.O.D.O.K.",
-                        "image": ""
+                        "image": "/images/MODOK.png"
                     },
                     {
                         "name": "Kingpin",
-                        "image": ""
+                        "image": "/images/Kingpin.png"
                     },
                     {
                         "name": "Bullseye",
-                        "image": ""
+                        "image": "/images/Bullseye.png"
                     },
                     {
                         "name": "Rhino",
-                        "image": ""
+                        "image": "/images/Rhino.png"
                     },
                     {
                         "name": "Baron Zemo",
-                        "image": ""
+                        "image": "/images/BaronZemo.png"
                     },
                     {
                         "name": "Kang",
-                        "image": ""
+                        "image": "/images/Kang.png"
                     },
                     {
                         "name": "Carnage",
-                        "image": ""
+                        "image": "/images/Carnage.png"
                     },
                     {
                         "name": "Venom",
-                        "image": ""
+                        "image": "/images/Venom.png"
                     },
                     {
                         "name": "Hela",
-                        "image": ""
+                        "image": "/images/Hela.png"
                     },
                     {
                         "name": "Dormammu",
-                        "image": ""
+                        "image": "/images/Dormammu.png"
                     },
                 ],
                 "locations": [],
@@ -839,7 +840,16 @@ export const data = [
                         "image": ""
                     },
                 ],
-                "locations": [],
+                "locations": [
+                    {
+                        "name": "Starlight Citadel",
+                        "image": ""
+                    },
+                    {
+                        "name": "Apocalypse's Pyramid",
+                        "image": ""
+                    }
+                ],
                 "antiheroes": [
                     {
                         "name": "Apocalypse",
@@ -894,6 +904,10 @@ export const data = [
                         "name": "Xavier's School for Gifted Youngsters",
                         "image": ""
                     },
+                    {
+                        "name": "Danger Room",
+                        "image": ""
+                    }
                 ],
                 "antiheroes": []
             },
@@ -969,7 +983,12 @@ export const data = [
                         "image": ""
                     },
                 ],
-                "locations": [],
+                "locations": [
+                    {
+                        "name": "Deadpool's Apartment",
+                        "image": ""
+                    }
+                ],
                 "antiheroes": [
                     {
                         "name": "Bob, Agent of Hydra",

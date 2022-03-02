@@ -32,6 +32,7 @@ function App() {
       <Set
         key={set.title}
         title={set.title}
+        image={set.image}
         heroes={set.heroes}
         villains={set.villains}
         locations={set.locations}

@@ -36,6 +36,7 @@ export default function Set(props) {
                     id="panel1a-header"
                     sx={{ height:"auto" }}
                 >
+                    <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar>
                     <Typography>{props.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails sx={{padding:0}}>
@@ -46,6 +47,7 @@ export default function Set(props) {
                     <SetItem
                         key={hero.name}
                         name={hero.name}
+                        image={hero.image}
                         checked={props.heroesChecked}
                         setChecked={props.setHeroesChecked}
                         type="hero"
@@ -59,6 +61,7 @@ export default function Set(props) {
                     <SetItem
                         key={villain.name}
                         name={villain.name}
+                        image={villain.image}
                         checked={props.villainsChecked}
                         setChecked={props.setVillainsChecked}
                         type="villain"
@@ -72,6 +75,7 @@ export default function Set(props) {
                     <AntiheroSetItem
                         key={antihero.name}
                         name={antihero.name}
+                        image={antihero.image}
                         heroesChecked={props.heroesChecked}
                         setHeroesChecked={props.setHeroesChecked}
                         villainsChecked={props.villainsChecked}
@@ -79,7 +83,7 @@ export default function Set(props) {
                     >
                     </AntiheroSetItem>
                 ))}
-                {props.locations.length >=1 ?
+                {/* {props.locations.length >=1 ?
                     (<> <Divider /> <ListSubheader>Locations</ListSubheader> </>)
                     : <></>}
                 {props.locations.map((location) => (
@@ -91,14 +95,16 @@ export default function Set(props) {
                         type="location"
                     >
                     </SetItem>
-                ))}
+                ))} */}
                     </List>
                 </AccordionDetails>
             </Accordion>
             <Checkbox
                 className="set-checkbox"
                 onChange={handleSetToggle}
-                checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name)))}
+                checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
+                    && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+                    && props.antiheroes.every(antihero => props.antiheroesChecked.includes(antihero.name)))}
             ></Checkbox>
         </div>
     )
