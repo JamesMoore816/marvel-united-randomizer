@@ -774,8 +774,30 @@ export const data = [
             },
             {
                 "title": "X-Force",
-                "heroes": [],
-                "villains": [],
+                "heroes": [
+                    {
+                        "name": "Cable",
+                        "image": ""
+                    },
+                    {
+                        "name": "Domino",
+                        "image": ""
+                    },
+                    {
+                        "name": "Cannonball",
+                        "image": ""
+                    },
+                    {
+                        "name": "Shatterstar",
+                        "image": ""
+                    },
+                ],
+                "villains": [
+                    {
+                        "name": "Stryfe",
+                        "image": ""
+                    },
+                ],
                 "locations": [
                     {
                         "name": "Adirondack Mountains",

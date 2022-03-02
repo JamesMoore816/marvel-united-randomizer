@@ -15,14 +15,18 @@ import { useState } from 'react'
 
 export default function SetItem(props) {
     let backgroundColor = ""
+    let checkColor = ""
     if (props.type === "hero") {
         backgroundColor = "lightblue"
+        checkColor = "royalblue"
     }
     else if (props.type === "villain") {
         backgroundColor = "lightpink"
+        checkColor = "firebrick"
     }
     else if (props.type === "location") {
         backgroundColor = "lightgray"
+        checkColor = "black"
     }
     else if (props.type === "location") {
         backgroundColor = "thistle"
@@ -51,6 +55,7 @@ export default function SetItem(props) {
                     onChange={handleToggle(props.name)}
                     checked={props.checked.indexOf(props.name) !== -1}
                     inputProps={{ 'aria-labelledby': props.name }}
+                    sx={{'&.Mui-checked': {color: checkColor}}}
                 />
             }>
             <ListItemAvatar>

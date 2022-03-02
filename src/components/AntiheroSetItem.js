@@ -12,6 +12,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react'
+import { blue, pink, red } from '@mui/material/colors';
 
 export default function AntiheroSetItem(props) {
     let backgroundColor = "thistle"
@@ -54,11 +55,13 @@ export default function AntiheroSetItem(props) {
                     onChange={handleHeroToggle(props.name)}
                     checked={props.heroesChecked.indexOf(props.name) !== -1}
                     inputProps={{ 'aria-labelledby': props.name }}
+                    sx={{'&.Mui-checked': {color: blue[700]}}}
                 /><Checkbox
-                edge="end"
-                onChange={handleVillainToggle(props.name)}
-                checked={props.villainsChecked.indexOf(props.name) !== -1}
-                inputProps={{ 'aria-labelledby': props.name }}
+                    edge="end"
+                    onChange={handleVillainToggle(props.name)}
+                    checked={props.villainsChecked.indexOf(props.name) !== -1}
+                    inputProps={{ 'aria-labelledby': props.name }}
+                    sx={{'&.Mui-checked': {color: red[700]}}}
                 />
                 </>
             }>

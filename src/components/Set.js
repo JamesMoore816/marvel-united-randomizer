@@ -18,14 +18,18 @@ import Divider from '@mui/material/Divider';
 
 
 export default function Set(props) {
+    const [allChecked, setAllChecked] = useState(false)
 
     const handleSetToggle = () => {
-        console.log("set")
+        if (!allChecked) {
+            setAllChecked(true);
+        }
+        else (setAllChecked(false))
     }
 
     return (
         <div className="accordion-div">
-            <Accordion className="set-accordion" sx={{ width:"100%", maxWidth:450 }}>
+            <Accordion className="set-accordion" elevation={0} square sx={{ width:"100%", maxWidth:450, borderStyle:"solid", borderWidth:"1px", borderColor:"#666666" }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
@@ -34,8 +38,8 @@ export default function Set(props) {
                 >
                     <Typography>{props.title}</Typography>
                 </AccordionSummary>
-                <AccordionDetails>
-                    <List>
+                <AccordionDetails sx={{padding:0}}>
+                    <List sx={{padding:0}}>
                     {props.heroes.length >=1 ? (<ListSubheader>Heroes</ListSubheader>)
                     : <></>}                   
                     {props.heroes.map((hero) => (
@@ -93,8 +97,8 @@ export default function Set(props) {
             </Accordion>
             <Checkbox
                 className="set-checkbox"
-                onChange={handleSetToggle(props.title)}
-                // checked={props.checked.indexOf(props.name) !== -1}
+                onChange={handleSetToggle}
+                checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name)))}
             ></Checkbox>
         </div>
     )
