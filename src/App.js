@@ -12,10 +12,9 @@ import Avatar from '@mui/material/Avatar';
 import { useState } from 'react'
 
 function App() {
-  const [heroesChecked, setHeroesChecked] = useState([1])
-  const [villainsChecked, setVillainsChecked] = useState([1])
-  const [locationsChecked, setLocationsChecked] = useState([1])
-  const [antiheroesChecked, setAntiheroesChecked] = useState([1])
+  const [appHeroesChecked, setAppHeroesChecked] = useState([1])
+  const [appVillainsChecked, setAppVillainsChecked] = useState([1])
+  const [appLocationsChecked, setAppLocationsChecked] = useState([1])
 
   console.log(data[0].sets)
 
@@ -37,12 +36,12 @@ function App() {
         villains={set.villains}
         locations={set.locations}
         antiheroes={set.antiheroes}
-        heroesChecked={heroesChecked}
-        setHeroesChecked={setHeroesChecked}
-        villainsChecked={villainsChecked}
-        setVillainsChecked={setVillainsChecked}
-        locationsChecked={locationsChecked}
-        setLocationsChecked={setLocationsChecked}
+        appHeroesChecked={appHeroesChecked}
+        setAppHeroesChecked={setAppHeroesChecked}
+        appVillainsChecked={appVillainsChecked}
+        setAppVillainsChecked={setAppVillainsChecked}
+        appLocationsChecked={appLocationsChecked}
+        setAppLocationsChecked={setAppLocationsChecked}
         />
     ))}
     </>
