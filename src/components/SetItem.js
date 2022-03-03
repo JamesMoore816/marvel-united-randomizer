@@ -45,7 +45,6 @@ export default function SetItem(props) {
         }
 
         props.setChecked(checked);
-        console.log(checked)
     };
 
     return (

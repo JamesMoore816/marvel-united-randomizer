@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react'
 import { blue, pink, red } from '@mui/material/colors';
+import React from 'react'
 
 export default function AntiheroSetItem(props) {
     let backgroundColor = "thistle"
@@ -74,3 +75,5 @@ export default function AntiheroSetItem(props) {
         </ListItem>
     )
 }
+
+export const MemoizedAntiheroSetItem = React.memo(AntiheroSetItem, [])

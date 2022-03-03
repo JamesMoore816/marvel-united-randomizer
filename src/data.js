@@ -409,6 +409,7 @@ export const data = [
             },
             {
                 "title": "Season 1 Stretch Goals",
+                "image": "/images/Season1Promos.png",
                 "heroes": [
                     {
                         "name": "Hawkeye",
@@ -598,6 +599,7 @@ export const data = [
             },
             {
                 "title": "X-Men Core Set",
+                "image": "/images/X-Men.png",
                 "heroes": [
                     {
                         "name": "Wolverine",
@@ -681,6 +683,7 @@ export const data = [
             },
             {
                 "title": "Blue Team",
+                "image": "/images/BlueTeam.png",
                 "heroes": [
                     {
                         "name": "Gambit",
@@ -731,6 +734,7 @@ export const data = [
             },
             {
                 "title": "Gold Team",
+                "image": "/images/GoldTeam.png",
                 "heroes": [
                     {
                         "name": "Colossus",
@@ -781,6 +785,7 @@ export const data = [
             },
             {
                 "title": "X-Force",
+                "image": "/images/X-Force.png",
                 "heroes": [
                     {
                         "name": "Cable",
@@ -827,6 +832,7 @@ export const data = [
             },
             {
                 "title": "The Horsemen of Apocalypse",
+                "image": "/images/TheHorsemenOfApocalypse.png",
                 "heroes": [],
                 "villains": [
                     {
@@ -865,6 +871,7 @@ export const data = [
             },
             {
                 "title": "First Class",
+                "image": "/images/FirstClass.png",
                 "heroes": [
                     {
                         "name": "Cyclops (First Class)",
@@ -919,6 +926,7 @@ export const data = [
             },
             {
                 "title": "Days of Future Past",
+                "image": "/images/DaysOfFuturePast.png",
                 "heroes": [
                     {
                         "name": "Logan",
@@ -936,6 +944,7 @@ export const data = [
             },
             {
                 "title": "Phoenix Five",
+                "image": "/images/PhoenixFive.png",
                 "heroes": [
                     {
                         "name": "Hope Summers",
@@ -969,6 +978,7 @@ export const data = [
             },
             {
                 "title": "Deadpool",
+                "image": "/images/DeadpoolBox.png",
                 "heroes": [
                     {
                         "name": "Deadpool",
@@ -1004,6 +1014,7 @@ export const data = [
             },
             {
                 "title": "Fantastic Four",
+                "image": "/images/FantasticFour.png",
                 "heroes": [
                     {
                         "name": "Mister Fantastic",

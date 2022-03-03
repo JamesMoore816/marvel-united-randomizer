@@ -15,33 +15,52 @@ import { useState } from 'react'
 import SetItem from './SetItem'
 import MemoizedSetItem from './SetItem'
 import AntiheroSetItem from './AntiheroSetItem'
+import MemoizedAntiheroSetItem from './AntiheroSetItem'
 import Divider from '@mui/material/Divider';
 import React from 'react';
 
 
 export default function Set(props) {    
-    const [allChecked, setAllChecked] = useState(false)
-    const [localHeroesChecked, setLocalHeroesChecked] = useState([1])
-    const [localVillainsChecked, setLocalVillainsChecked] = useState([1])
-    const [localLocationsChecked, setLocalLocationsChecked] = useState([1])
+    // const [allChecked, setAllChecked] = useState(false)
+    // const [heroesChecked, setHeroesChecked] = useState([1])
+    // const [villainsChecked, setVillainsChecked] = useState([1])
+    // const [localLocationsChecked, setLocalLocationsChecked] = useState([1])
 
     const handleSetToggle = () => {
-        if ((props.heroes.every(hero => localHeroesChecked.includes(hero.name))
-        && props.villains.every(villain => localVillainsChecked.includes(villain.name))
-        && props.antiheroes.every(antihero => localHeroesChecked.includes(antihero.name))
-        && props.antiheroes.every(antihero => localVillainsChecked.includes(antihero.name)))) {
-            setLocalHeroesChecked([1]);
-            setLocalVillainsChecked([1]);
+        if ((props.heroes.every(hero => props.heroesChecked.includes(hero.name))
+        && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+        && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))) {
+            let tempHeroes = [...props.heroesChecked]
+            let tempVillains = [...props.villainsChecked]
+            for (let hero of props.heroes) {
+                tempHeroes.splice(tempHeroes.indexOf(hero.name))
+            }
+            for (let villain of props.villains) {
+                tempVillains.splice(tempVillains.indexOf(villain.name))
+            }
+            props.setHeroesChecked(tempHeroes)
+            props.setVillainsChecked(tempVillains)
+            console.log("clear check")
         }
         else {
-            let tempHeroes = [1]
-            props.heroes.every(hero => tempHeroes.push(hero.name))
-            props.antiheroes.every(antihero => tempHeroes.push(antihero.name))
-            setLocalHeroesChecked(tempHeroes)
-            let tempVillains = [1]
-            props.villains.every(villain => tempVillains.push(villain.name))
-            props.antiheroes.every(antihero => tempVillains.push(antihero.name))
-            setLocalVillainsChecked(tempVillains)
+            let tempHeroes = [...props.heroesChecked]
+            let tempVillains = [...props.villainsChecked]
+            for (let hero of props.heroes) {
+                if (!tempHeroes.includes(hero.name)) {tempHeroes.push(hero.name)}
+            }
+            for (let villain of props.villains) {
+                if (!tempVillains.includes(villain.name)) {tempVillains.push(villain.name)}
+            }
+            for (let antihero of props.antiheroes) {
+                if (!tempHeroes.includes(antihero.name)) {tempHeroes.push(antihero.name)}
+                if (!tempVillains.includes(antihero.name)) {tempVillains.push(antihero.name)}
+            }
+            console.log(props.heroesChecked)
+            console.log(tempHeroes)
+            props.setHeroesChecked(tempHeroes)
+            props.setVillainsChecked(tempVillains)
+            console.log("set all check")
         }
     }
 
@@ -66,10 +85,8 @@ export default function Set(props) {
                         key={hero.name}
                         name={hero.name}
                         image={hero.image}
-                        checked={localHeroesChecked}
-                        setChecked={setLocalHeroesChecked}
-                        appHeroesChecked={props.appHeroesChecked}
-                        setAppHeroesChecked={props.setAppHeroesChecked}
+                        checked={props.heroesChecked}
+                        setChecked={props.setHeroesChecked}
                         type="hero"
                     >
                     </MemoizedSetItem>                    
@@ -82,10 +99,8 @@ export default function Set(props) {
                         key={villain.name}
                         name={villain.name}
                         image={villain.image}
-                        checked={localVillainsChecked}
-                        setChecked={setLocalVillainsChecked}
-                        appVillainsChecked={props.appVilliansChecked}
-                        setAppVillainsChecked={props.setAppVillainsChecked}
+                        checked={props.villainsChecked}
+                        setChecked={props.setVillainsChecked}
                         type="villain"
                     >
                     </MemoizedSetItem>
@@ -94,20 +109,16 @@ export default function Set(props) {
                     (<> <Divider /> <ListSubheader>Antiheroes</ListSubheader> </>)
                     : <></>}
                 {props.antiheroes.map((antihero) => (
-                    <AntiheroSetItem
+                    <MemoizedAntiheroSetItem
                         key={antihero.name}
                         name={antihero.name}
                         image={antihero.image}
-                        heroesChecked={localHeroesChecked}
-                        setHeroesChecked={setLocalHeroesChecked}
-                        villainsChecked={localVillainsChecked}
-                        setVillainsChecked={setLocalVillainsChecked}
-                        appHeroesChecked={props.appHeroesChecked}
-                        setAppHeroesChecked={props.setAppHeroesChecked}
-                        appVillainsChecked={props.appVilliansChecked}
-                        setAppVillainsChecked={props.setAppVillainsChecked}
+                        heroesChecked={props.heroesChecked}
+                        setHeroesChecked={props.setHeroesChecked}
+                        villainsChecked={props.villainsChecked}
+                        setVillainsChecked={props.setVillainsChecked}
                     >
-                    </AntiheroSetItem>
+                    </MemoizedAntiheroSetItem>
                 ))}
                 {/* {props.locations.length >=1 ?
                     (<> <Divider /> <ListSubheader>Locations</ListSubheader> </>)
@@ -128,10 +139,10 @@ export default function Set(props) {
             <Checkbox
                 className="set-checkbox"
                 onChange={handleSetToggle}
-                checked={(props.heroes.every(hero => localHeroesChecked.includes(hero.name))
-                    && props.villains.every(villain => localVillainsChecked.includes(villain.name))
-                    && props.antiheroes.every(antihero => localHeroesChecked.includes(antihero.name))
-                    && props.antiheroes.every(antihero => localVillainsChecked.includes(antihero.name)))}
+                checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
+                    && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+                    && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+                    && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))}
             ></Checkbox>
         </div>
     )

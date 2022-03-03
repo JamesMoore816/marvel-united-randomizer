@@ -1,9 +1,9 @@
 * {
-  /* font-family:'Oswald' !important; */
+  font-family:'Oswald' !important;
   /* font-family:'Fira Sans Condensed' !important; */
   /* font-family:'Ubuntu' !important; */
   /* font-family:'Shanti' !important; */
-  font-family:'Ubuntu Condensed' !important;
+  /* font-family:'Ubuntu Condensed' !important; */
 }
 
 .App {
@@ -60,4 +60,11 @@
   margin-right: auto !important;
   display: inline-block !important;
   vertical-align: center !important;
+}
+
+.options-list {
+  display: flex;
+  width:480px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
