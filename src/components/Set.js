@@ -27,12 +27,12 @@ export default function Set(props) {
     // const [localLocationsChecked, setLocalLocationsChecked] = useState([1])
 
     const handleSetToggle = () => {
+        let tempHeroes = [...props.heroesChecked]
+            let tempVillains = [...props.villainsChecked]
         if ((props.heroes.every(hero => props.heroesChecked.includes(hero.name))
         && props.villains.every(villain => props.villainsChecked.includes(villain.name))
         && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
-        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))) {
-            let tempHeroes = [...props.heroesChecked]
-            let tempVillains = [...props.villainsChecked]
+        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))) {            
             for (let hero of props.heroes) {
                 tempHeroes.splice(tempHeroes.indexOf(hero.name))
             }
@@ -41,11 +41,8 @@ export default function Set(props) {
             }
             props.setHeroesChecked(tempHeroes)
             props.setVillainsChecked(tempVillains)
-            console.log("clear check")
         }
         else {
-            let tempHeroes = [...props.heroesChecked]
-            let tempVillains = [...props.villainsChecked]
             for (let hero of props.heroes) {
                 if (!tempHeroes.includes(hero.name)) {tempHeroes.push(hero.name)}
             }
@@ -56,11 +53,51 @@ export default function Set(props) {
                 if (!tempHeroes.includes(antihero.name)) {tempHeroes.push(antihero.name)}
                 if (!tempVillains.includes(antihero.name)) {tempVillains.push(antihero.name)}
             }
-            console.log(props.heroesChecked)
-            console.log(tempHeroes)
             props.setHeroesChecked(tempHeroes)
             props.setVillainsChecked(tempVillains)
-            console.log("set all check")
+        }
+    }
+
+    const handleSetToggleWithLocations = () => {
+        let tempHeroes = [...props.heroesChecked]
+        let tempVillains = [...props.villainsChecked]
+        let tempLocations = [...props.locationsChecked]        
+        if ((props.heroes.every(hero => props.heroesChecked.includes(hero.name))
+        && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+        && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name))
+        && props.locations.every(location => props.locationsChecked.includes(location.name)))) {            
+            for (let hero of props.heroes) {
+                tempHeroes.splice(tempHeroes.indexOf(hero.name))
+            }
+            for (let villain of props.villains) {
+                tempVillains.splice(tempVillains.indexOf(villain.name))
+            }
+            for (let location of props.locations) {
+                tempLocations.splice(tempLocations.indexOf(location.name))
+            }
+            props.setHeroesChecked(tempHeroes)
+            props.setVillainsChecked(tempVillains)
+            props.setLocationsChecked(tempLocations)
+        }
+        else {
+            
+            for (let hero of props.heroes) {
+                if (!tempHeroes.includes(hero.name)) {tempHeroes.push(hero.name)}
+            }
+            for (let villain of props.villains) {
+                if (!tempVillains.includes(villain.name)) {tempVillains.push(villain.name)}
+            }
+            for (let antihero of props.antiheroes) {
+                if (!tempHeroes.includes(antihero.name)) {tempHeroes.push(antihero.name)}
+                if (!tempVillains.includes(antihero.name)) {tempVillains.push(antihero.name)}
+            }
+            for (let location of props.locations) {
+                if (!tempLocations.includes(location.name)) {tempLocations.push(location.name)}
+            }
+            props.setHeroesChecked(tempHeroes)
+            props.setVillainsChecked(tempVillains)
+            props.setLocationsChecked(tempLocations)
         }
     }
 
@@ -120,30 +157,44 @@ export default function Set(props) {
                     >
                     </MemoizedAntiheroSetItem>
                 ))}
-                {/* {props.locations.length >=1 ?
-                    (<> <Divider /> <ListSubheader>Locations</ListSubheader> </>)
-                    : <></>}
-                {props.locations.map((location) => (
-                    <SetItem
-                        key={location.name}
-                        name={location.name}
-                        checked={locallocationsChecked}
-                        setChecked={setLocalLocationsChecked}
-                        type="location"
-                    >
-                    </SetItem>
-                ))} */}
+                {props.locations.length >=1 && props.locationsOption===true ?
+                    (<>
+                        <Divider />
+                        <ListSubheader>Locations</ListSubheader> 
+                        {props.locations.map((location) => (
+                            <MemoizedSetItem
+                                key={location.name}
+                                name={location.name}
+                                checked={props.locationsChecked}
+                                setChecked={props.setLocationsChecked}
+                                type="location"
+                            >
+                            </MemoizedSetItem>
+                        ))}
+                    </>): <></>}                
                     </List>
                 </AccordionDetails>
             </Accordion>
-            <Checkbox
-                className="set-checkbox"
-                onChange={handleSetToggle}
-                checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
-                    && props.villains.every(villain => props.villainsChecked.includes(villain.name))
-                    && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
-                    && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))}
-            ></Checkbox>
+            {props.locationsOption===true ? (
+                <Checkbox
+                    className="set-checkbox"
+                    onChange={handleSetToggleWithLocations}
+                    checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
+                        && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+                        && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+                        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name))
+                        && props.locations.every(location => props.locationsChecked.includes(location.name)))}
+                ></Checkbox>
+                ) : (
+                <Checkbox
+                    className="set-checkbox"
+                    onChange={handleSetToggle}
+                    checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
+                        && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+                        && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+                        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))}
+                ></Checkbox>    
+                ) }
         </div>
     )
 }
