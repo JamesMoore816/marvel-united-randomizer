@@ -13,6 +13,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react'
+import React from 'react'
 
 export default function SetItem(props) {
     let backgroundColor = ""
@@ -73,3 +74,5 @@ export default function SetItem(props) {
         </>
     )
 }
+
+export const MemoizedSetItem = React.memo(SetItem)

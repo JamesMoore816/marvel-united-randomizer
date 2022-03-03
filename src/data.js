@@ -90,6 +90,7 @@ export const data = [
             },
             {
                 "title": "Enter the Spider-Verse",
+                "image": "/images/EnterTheSpiderVerse.png",
                 "heroes": [
                     {
                         "name": "Spider-Man",
@@ -144,6 +145,7 @@ export const data = [
             },
             {
                 "title": "Return of the Sinister Six",
+                "image": "/images/ReturnOfTheSinisterSix.png",
                 "heroes": [],
                 "villains": [
                     {
@@ -176,6 +178,7 @@ export const data = [
             },
             {
                 "title": "Rise of the Black Panther",
+                "image": "/images/RiseOfTheBlackPanther.png",
                 "heroes": [
                     {
                         "name": "Black Panther",
@@ -226,6 +229,7 @@ export const data = [
             },
             {
                 "title": "Tales of Asgard",
+                "image": "/images/TalesOfAsgard.png",
                 "heroes": [
                     {
                         "name": "Thor",
@@ -280,6 +284,7 @@ export const data = [
             },
             {
                 "title": "Guardians of the Galaxy Remix",
+                "image": "/images/GuardiansOfTheGalaxyRemix.png",
                 "heroes": [
                     {
                         "name": "Star-Lord",
@@ -334,6 +339,7 @@ export const data = [
             },
             {
                 "title": "The Infinity Gauntlet",
+                "image": "/images/TheInfinityGauntlet.png",
                 "heroes": [],
                 "villains": [
                     {

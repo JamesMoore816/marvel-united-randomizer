@@ -13,12 +13,17 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react'
 import SetItem from './SetItem'
+import MemoizedSetItem from './SetItem'
 import AntiheroSetItem from './AntiheroSetItem'
 import Divider from '@mui/material/Divider';
+import React from 'react';
 
 
-export default function Set(props) {
+export default function Set(props) {    
     const [allChecked, setAllChecked] = useState(false)
+    const [localHeroesChecked, setLocalHeroesChecked] = useState([1])
+    const [localVillainsChecked, setLocalVillainsChecked] = useState([1])
+    const [localLocationsChecked, setLocalLocationsChecked] = useState([1])
 
     const handleSetToggle = () => {
         if (!allChecked) {
@@ -34,39 +39,39 @@ export default function Set(props) {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{ height:"auto" }}
+                    sx={{ height:"auto"}}
                 >
                     <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar>
                     <Typography>{props.title}</Typography>
                 </AccordionSummary>
-                <AccordionDetails sx={{padding:0}}>
+                <AccordionDetails sx={{ padding:0 }}>
                     <List sx={{padding:0}}>
                     {props.heroes.length >=1 ? (<ListSubheader>Heroes</ListSubheader>)
                     : <></>}                   
                     {props.heroes.map((hero) => (
-                    <SetItem
+                    <MemoizedSetItem
                         key={hero.name}
                         name={hero.name}
                         image={hero.image}
-                        checked={props.heroesChecked}
-                        setChecked={props.setHeroesChecked}
+                        checked={localHeroesChecked}
+                        setChecked={setLocalHeroesChecked}
                         type="hero"
                     >
-                    </SetItem>                    
+                    </MemoizedSetItem>                    
                 ))}
                 {props.villains.length >=1 ?
                     (<> <Divider /> <ListSubheader>Villains</ListSubheader> </>)
                     : <></>}
                 {props.villains.map((villain) => (
-                    <SetItem
+                    <MemoizedSetItem
                         key={villain.name}
                         name={villain.name}
                         image={villain.image}
-                        checked={props.villainsChecked}
-                        setChecked={props.setVillainsChecked}
+                        checked={localVillainsChecked}
+                        setChecked={setLocalVillainsChecked}
                         type="villain"
                     >
-                    </SetItem>
+                    </MemoizedSetItem>
                 ))}
                 {props.antiheroes.length >=1 ?
                     (<> <Divider /> <ListSubheader>Antiheroes</ListSubheader> </>)
@@ -76,10 +81,10 @@ export default function Set(props) {
                         key={antihero.name}
                         name={antihero.name}
                         image={antihero.image}
-                        heroesChecked={props.heroesChecked}
-                        setHeroesChecked={props.setHeroesChecked}
-                        villainsChecked={props.villainsChecked}
-                        setVillainsChecked={props.setVillainsChecked}
+                        heroesChecked={localHeroesChecked}
+                        setHeroesChecked={setLocalHeroesChecked}
+                        villainsChecked={localVillainsChecked}
+                        setVillainsChecked={setLocalVillainsChecked}
                     >
                     </AntiheroSetItem>
                 ))}
@@ -102,11 +107,12 @@ export default function Set(props) {
             <Checkbox
                 className="set-checkbox"
                 onChange={handleSetToggle}
-                checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
-                    && props.villains.every(villain => props.villainsChecked.includes(villain.name))
-                    && props.antiheroes.every(antihero => props.antiheroesChecked.includes(antihero.name)))}
+                checked={(props.heroes.every(hero => localHeroesChecked.includes(hero.name))
+                    && props.villains.every(villain => localVillainsChecked.includes(villain.name))
+                    && props.antiheroes.every(antihero => localHeroesChecked.includes(antihero.name))
+                    && props.antiheroes.every(antihero => localVillainsChecked.includes(antihero.name)))}
             ></Checkbox>
         </div>
     )
-
 }
+export const MemoizedSet = React.memo(Set)

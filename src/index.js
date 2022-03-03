@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '@fontsource/ubuntu';
+import '@fontsource/ubuntu-condensed';
+import '@fontsource/shanti';
+import '@fontsource/oswald';
+import '@fontsource/fira-sans-condensed';
 
 ReactDOM.render(
   <React.StrictMode>

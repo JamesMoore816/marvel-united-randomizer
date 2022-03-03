@@ -1,6 +1,7 @@
 import './App.css';
 import { data } from './data.js';
 import Set from './components/Set'
+import MemoizedSet from './components/Set'
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -22,14 +23,13 @@ function App() {
     console.log("Submit Clicked")
   }
 
-
   return (
     <>
     <div className="App">
       <h1>Marvel United Randomizer</h1>
     </div>
     {data[0].sets.map((set) => (
-      <Set
+      <MemoizedSet
         key={set.title}
         title={set.title}
         image={set.image}
@@ -43,8 +43,6 @@ function App() {
         setVillainsChecked={setVillainsChecked}
         locationsChecked={locationsChecked}
         setLocationsChecked={setLocationsChecked}
-        antiheroesChecked={antiheroesChecked}
-        setAntiheroesChecked={setAntiheroesChecked}
         />
     ))}
     </>
