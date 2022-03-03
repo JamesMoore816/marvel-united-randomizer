@@ -36,9 +36,11 @@ export default function Set(props) {
         else {
             let tempHeroes = [1]
             props.heroes.every(hero => tempHeroes.push(hero.name))
+            props.antiheroes.every(antihero => tempHeroes.push(antihero.name))
             setLocalHeroesChecked(tempHeroes)
             let tempVillains = [1]
             props.villains.every(villain => tempVillains.push(villain.name))
+            props.antiheroes.every(antihero => tempVillains.push(antihero.name))
             setLocalVillainsChecked(tempVillains)
         }
     }
