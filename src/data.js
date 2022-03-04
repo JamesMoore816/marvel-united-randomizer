@@ -33,10 +33,6 @@ export const data = [
                         "name": "Wasp",
                         "image": "/images/Wasp.png"
                     },
-                    {
-                        "name": "Venom (Walmart Exclusive)",
-                        "image": "/images/Venom.png"
-                    },
                 ],
                 "villains": [
                     {
@@ -408,7 +404,7 @@ export const data = [
                 "antiheroes": []
             },
             {
-                "title": "Season 1 Stretch Goals",
+                "title": "Season 1 Promos",
                 "image": "/images/Season1Promos.png",
                 "heroes": [
                     {
@@ -484,6 +480,10 @@ export const data = [
                         "image": "/images/Spider-Woman.png"
                     },
                     {
+                        "name": "Venom",
+                        "image": "/images/Venom.png"
+                    },
+                    {
                         "name": "Shang Chi",
                         "image": "/images/ShangChi.png"
                     },
@@ -532,8 +532,8 @@ export const data = [
                         "image": "/images/Mantis.png"
                     },
                     {
-                        "name": "Drax",
-                        "image": "/images/Drax.png"
+                        "name": "Drax The Destroyer",
+                        "image": "/images/DraxTheDestroyer.png"
                     },
                     {
                         "name": "Howard the Duck",
@@ -1064,7 +1064,7 @@ export const data = [
                 ]
             },
             {
-                "title": "Season 2 Stretch Goals",
+                "title": "Season 2 Promos",
                 "heroes": [
                     {
                         "name": "Polaris",
