@@ -9,6 +9,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Checkbox from '@mui/material/Checkbox';
+import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -22,6 +23,7 @@ function App() {
   const [locationsChecked, setLocationsChecked] = useState([1])
   const [locationsOption, setLocationsOption] = useState(false)
   const [allowDupes, setAllowDupes] = useState(false)
+  const [numHeroes, setNumHeroes] = useState("2")
 
   console.log(data[0].sets)
 
@@ -38,7 +40,10 @@ function App() {
           setLocationsOption={setLocationsOption}
           allowDupes={allowDupes}
           setAllowDupes={setAllowDupes}
+          numHeroes={numHeroes}
+          setNumHeroes={setNumHeroes}
         />
+        <Button></Button>
         {data[0].sets.map((set) => (
           <MemoizedSet
             key={set.title}

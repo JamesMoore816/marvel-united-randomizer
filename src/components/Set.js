@@ -103,7 +103,7 @@ export default function Set(props) {
 
     return (
         <div className="accordion-div">
-            <Accordion className="set-accordion" elevation={0} square sx={{ width:"100%", maxWidth:450, borderStyle:"solid", borderWidth:"1px", borderColor:"#666666" }}>
+            <Accordion className="set-accordion" elevation={0} square sx={{ width:"90%", maxWidth:400, borderStyle:"solid", borderWidth:"1px", borderColor:"#666666" }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
