@@ -67,8 +67,10 @@ export default function AntiheroSetItem(props) {
                 </>
             }>
             <ListItemAvatar>
-                <Avatar
-
+            <Avatar
+                    sx={{borderStyle:"solid", borderWidth:2, borderColor:"#666666"}}
+                    alt={props.name}
+                    src={props.image}
                 />
             </ListItemAvatar>
             <ListItemText primary={`${props.name}`} />

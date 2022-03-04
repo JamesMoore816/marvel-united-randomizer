@@ -103,19 +103,19 @@ export default function Set(props) {
 
     return (
         <div className="accordion-div">
-            <Accordion disableGutters className="set-accordion" elevation={0} square sx={{ width:420, borderStyle:"solid", borderWidth:"1px", borderColor:"#666666" }}>
+            <Accordion disableGutters className="set-accordion" elevation={0} square sx={{ width:420 }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{ height:"auto" }}
+                    sx={{ height:"auto", backgroundColor:"#EEEEEE", borderStyle:"solid", borderWidth:1, borderColor:"#DDDDDD" }}
                 >
-                    <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar>
-                    <Typography>{props.title}</Typography>
+                    <ListItemAvatar><Avatar variant="square" src={props.image}/></ListItemAvatar>
+                    <Typography sx={{marginTop:0.9}}>{props.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails sx={{ padding:0 }}>
                     <List sx={{padding:0}}>
-                    {props.heroes.length >=1 ? (<ListSubheader>Heroes</ListSubheader>)
+                    {props.heroes.length >=1 ? (<ListSubheader sx={{padding:0.7, lineHeight:1, color:"white", backgroundColor:"darkblue"}}>Heroes</ListSubheader>)
                     : <></>}                   
                     {props.heroes.map((hero) => (
                     <MemoizedSetItem
@@ -129,7 +129,7 @@ export default function Set(props) {
                     </MemoizedSetItem>                    
                 ))}
                 {props.villains.length >=1 ?
-                    (<> <Divider /> <ListSubheader>Villains</ListSubheader> </>)
+                    (<> <ListSubheader sx={{padding:0.7, lineHeight:1, color:"white", backgroundColor:"darkred"}}>Villains</ListSubheader> </>)
                     : <></>}
                 {props.villains.map((villain) => (
                     <MemoizedSetItem
@@ -143,7 +143,7 @@ export default function Set(props) {
                     </MemoizedSetItem>
                 ))}
                 {props.antiheroes.length >=1 ?
-                    (<> <Divider /> <ListSubheader>Antiheroes</ListSubheader> </>)
+                    (<> <ListSubheader sx={{padding:0.7, lineHeight:1, color:"white", backgroundColor:"purple"}}>Antiheroes</ListSubheader> </>)
                     : <></>}
                 {props.antiheroes.map((antihero) => (
                     <MemoizedAntiheroSetItem
@@ -159,8 +159,7 @@ export default function Set(props) {
                 ))}
                 {props.locations.length >=1 && props.locationsOption===true ?
                     (<>
-                        <Divider />
-                        <ListSubheader>Locations</ListSubheader> 
+                        <ListSubheader sx={{padding:0.7, lineHeight:1, color:"white", backgroundColor:"dimgray"}}>Locations</ListSubheader> 
                         {props.locations.map((location) => (
                             <MemoizedSetItem
                                 key={location.name}
