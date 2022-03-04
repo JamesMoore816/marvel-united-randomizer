@@ -50,20 +50,20 @@ export default function AntiheroSetItem(props) {
     return (
         <ListItem
             // sx={{backgroundColor:backgroundColor}}
-            sx={{ backgroundImage:`url(${props.image}), url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"21%, 100%" }}
+            sx={{ backgroundImage:`url(${props.char.image}), url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"21%, 100%" }}
             secondaryAction={
                 <>
                 <Checkbox
                     edge="end"
-                    onChange={handleHeroToggle(props.name)}
-                    checked={props.heroesChecked.indexOf(props.name) !== -1}
-                    inputProps={{ 'aria-labelledby': props.name }}
+                    onChange={handleHeroToggle(props.char)}
+                    checked={props.heroesChecked.indexOf(props.char) !== -1}
+                    inputProps={{ 'aria-labelledby': props.char.name }}
                     sx={{'&.Mui-checked': {color: "royalblue"}}}
                 /><Checkbox
                     edge="end"
-                    onChange={handleVillainToggle(props.name)}
-                    checked={props.villainsChecked.indexOf(props.name) !== -1}
-                    inputProps={{ 'aria-labelledby': props.name }}
+                    onChange={handleVillainToggle(props.char)}
+                    checked={props.villainsChecked.indexOf(props.char) !== -1}
+                    inputProps={{ 'aria-labelledby': props.char.name }}
                     sx={{'&.Mui-checked': {color: "firebrick"}}}
                 />
                 </>
@@ -75,7 +75,7 @@ export default function AntiheroSetItem(props) {
                     src={props.image}
                 />
             </ListItemAvatar> */}
-            <ListItemText primary={`${props.name}`} sx={{marginLeft:10}}/>
+            <ListItemText primary={`${props.char.name}`} sx={{marginLeft:10}}/>
         </ListItem>
     )
 }

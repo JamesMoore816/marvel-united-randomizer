@@ -120,8 +120,9 @@ export default function Set(props) {
                         {props.heroes.map((hero) => (
                             <MemoizedSetItem
                                 key={hero.name}
-                                name={hero.name}
-                                image={hero.image}
+                                char={hero}
+                                // name={hero.name}
+                                // image={hero.image}
                                 checked={props.heroesChecked}
                                 setChecked={props.setHeroesChecked}
                                 type="hero"
@@ -134,8 +135,9 @@ export default function Set(props) {
                         {props.villains.map((villain) => (
                             <MemoizedSetItem
                                 key={villain.name}
-                                name={villain.name}
-                                image={villain.image}
+                                char={villain}
+                                // name={villain.name}
+                                // image={villain.image}
                                 checked={props.villainsChecked}
                                 setChecked={props.setVillainsChecked}
                                 type="villain"
@@ -148,8 +150,9 @@ export default function Set(props) {
                         {props.antiheroes.map((antihero) => (
                             <MemoizedAntiheroSetItem
                                 key={antihero.name}
-                                name={antihero.name}
-                                image={antihero.image}
+                                char={antihero}
+                                // name={antihero.name}
+                                // image={antihero.image}
                                 heroesChecked={props.heroesChecked}
                                 setHeroesChecked={props.setHeroesChecked}
                                 villainsChecked={props.villainsChecked}
