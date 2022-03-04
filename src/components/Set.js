@@ -20,7 +20,7 @@ import Divider from '@mui/material/Divider';
 import React from 'react';
 
 
-export default function Set(props) {    
+export default function Set(props) {
     // const [allChecked, setAllChecked] = useState(false)
     // const [heroesChecked, setHeroesChecked] = useState([1])
     // const [villainsChecked, setVillainsChecked] = useState([1])
@@ -28,11 +28,11 @@ export default function Set(props) {
 
     const handleSetToggle = () => {
         let tempHeroes = [...props.heroesChecked]
-            let tempVillains = [...props.villainsChecked]
+        let tempVillains = [...props.villainsChecked]
         if ((props.heroes.every(hero => props.heroesChecked.includes(hero.name))
-        && props.villains.every(villain => props.villainsChecked.includes(villain.name))
-        && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
-        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))) {            
+            && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+            && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+            && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))) {
             for (let hero of props.heroes) {
                 tempHeroes.splice(tempHeroes.indexOf(hero.name))
             }
@@ -44,14 +44,14 @@ export default function Set(props) {
         }
         else {
             for (let hero of props.heroes) {
-                if (!tempHeroes.includes(hero.name)) {tempHeroes.push(hero.name)}
+                if (!tempHeroes.includes(hero.name)) { tempHeroes.push(hero.name) }
             }
             for (let villain of props.villains) {
-                if (!tempVillains.includes(villain.name)) {tempVillains.push(villain.name)}
+                if (!tempVillains.includes(villain.name)) { tempVillains.push(villain.name) }
             }
             for (let antihero of props.antiheroes) {
-                if (!tempHeroes.includes(antihero.name)) {tempHeroes.push(antihero.name)}
-                if (!tempVillains.includes(antihero.name)) {tempVillains.push(antihero.name)}
+                if (!tempHeroes.includes(antihero.name)) { tempHeroes.push(antihero.name) }
+                if (!tempVillains.includes(antihero.name)) { tempVillains.push(antihero.name) }
             }
             props.setHeroesChecked(tempHeroes)
             props.setVillainsChecked(tempVillains)
@@ -61,12 +61,12 @@ export default function Set(props) {
     const handleSetToggleWithLocations = () => {
         let tempHeroes = [...props.heroesChecked]
         let tempVillains = [...props.villainsChecked]
-        let tempLocations = [...props.locationsChecked]        
+        let tempLocations = [...props.locationsChecked]
         if ((props.heroes.every(hero => props.heroesChecked.includes(hero.name))
-        && props.villains.every(villain => props.villainsChecked.includes(villain.name))
-        && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
-        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name))
-        && props.locations.every(location => props.locationsChecked.includes(location.name)))) {            
+            && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+            && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+            && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name))
+            && props.locations.every(location => props.locationsChecked.includes(location.name)))) {
             for (let hero of props.heroes) {
                 tempHeroes.splice(tempHeroes.indexOf(hero.name))
             }
@@ -81,19 +81,19 @@ export default function Set(props) {
             props.setLocationsChecked(tempLocations)
         }
         else {
-            
+
             for (let hero of props.heroes) {
-                if (!tempHeroes.includes(hero.name)) {tempHeroes.push(hero.name)}
+                if (!tempHeroes.includes(hero.name)) { tempHeroes.push(hero.name) }
             }
             for (let villain of props.villains) {
-                if (!tempVillains.includes(villain.name)) {tempVillains.push(villain.name)}
+                if (!tempVillains.includes(villain.name)) { tempVillains.push(villain.name) }
             }
             for (let antihero of props.antiheroes) {
-                if (!tempHeroes.includes(antihero.name)) {tempHeroes.push(antihero.name)}
-                if (!tempVillains.includes(antihero.name)) {tempVillains.push(antihero.name)}
+                if (!tempHeroes.includes(antihero.name)) { tempHeroes.push(antihero.name) }
+                if (!tempVillains.includes(antihero.name)) { tempVillains.push(antihero.name) }
             }
             for (let location of props.locations) {
-                if (!tempLocations.includes(location.name)) {tempLocations.push(location.name)}
+                if (!tempLocations.includes(location.name)) { tempLocations.push(location.name) }
             }
             props.setHeroesChecked(tempHeroes)
             props.setVillainsChecked(tempVillains)
@@ -103,100 +103,100 @@ export default function Set(props) {
 
     return (
         <div className="accordion-div">
-            <Accordion disableGutters className="set-accordion" elevation={0} square sx={{ width:420 }}>
+            <Accordion disableGutters className="set-accordion" elevation={0} square sx={{ width: 420 }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{ height:"auto", backgroundColor:"#EEEEEE", borderStyle:"solid", borderWidth:1, borderColor:"#DDDDDD" }}
+                    sx={{ height: "auto", backgroundColor: "#EEEEEE", borderStyle: "solid", borderWidth: 1, borderColor: "#DDDDDD" }}
                 >
-                    <ListItemAvatar><Avatar variant="square" src={props.image}/></ListItemAvatar>
-                    <Typography sx={{marginTop:0.9}}>{props.title}</Typography>
+                    <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar>
+                    <Typography sx={{ marginTop: 0.9 }}>{props.title}</Typography>
                 </AccordionSummary>
-                <AccordionDetails sx={{ padding:0 }}>
-                    <List sx={{padding:0}}>
-                    {props.heroes.length >=1 ? (<ListSubheader sx={{padding:0.7, lineHeight:1, color:"white", backgroundColor:"darkblue"}}>Heroes</ListSubheader>)
-                    : <></>}                   
-                    {props.heroes.map((hero) => (
-                    <MemoizedSetItem
-                        key={hero.name}
-                        name={hero.name}
-                        image={hero.image}
-                        checked={props.heroesChecked}
-                        setChecked={props.setHeroesChecked}
-                        type="hero"
-                    >
-                    </MemoizedSetItem>                    
-                ))}
-                {props.villains.length >=1 ?
-                    (<> <ListSubheader sx={{padding:0.7, lineHeight:1, color:"white", backgroundColor:"darkred"}}>Villains</ListSubheader> </>)
-                    : <></>}
-                {props.villains.map((villain) => (
-                    <MemoizedSetItem
-                        key={villain.name}
-                        name={villain.name}
-                        image={villain.image}
-                        checked={props.villainsChecked}
-                        setChecked={props.setVillainsChecked}
-                        type="villain"
-                    >
-                    </MemoizedSetItem>
-                ))}
-                {props.antiheroes.length >=1 ?
-                    (<> <ListSubheader sx={{padding:0.7, lineHeight:1, color:"white", backgroundColor:"purple"}}>Antiheroes</ListSubheader> </>)
-                    : <></>}
-                {props.antiheroes.map((antihero) => (
-                    <MemoizedAntiheroSetItem
-                        key={antihero.name}
-                        name={antihero.name}
-                        image={antihero.image}
-                        heroesChecked={props.heroesChecked}
-                        setHeroesChecked={props.setHeroesChecked}
-                        villainsChecked={props.villainsChecked}
-                        setVillainsChecked={props.setVillainsChecked}
-                    >
-                    </MemoizedAntiheroSetItem>
-                ))}
-                {props.locations.length >=1 && props.locationsOption===true ?
-                    (<>
-                        <ListSubheader sx={{padding:0.7, lineHeight:1, color:"white", backgroundColor:"dimgray"}}>Locations</ListSubheader> 
-                        {props.locations.map((location) => (
+                <AccordionDetails sx={{ padding: 0 }}>
+                    <List sx={{ padding: 0 }}>
+                        {props.heroes.length >= 1 ? (<ListSubheader sx={{ padding: 0.7, lineHeight: 1, color: "white", backgroundColor: "darkblue" }}>Heroes</ListSubheader>)
+                            : <></>}
+                        {props.heroes.map((hero) => (
                             <MemoizedSetItem
-                                key={location.name}
-                                name={location.name}
-                                checked={props.locationsChecked}
-                                setChecked={props.setLocationsChecked}
-                                type="location"
+                                key={hero.name}
+                                name={hero.name}
+                                image={hero.image}
+                                checked={props.heroesChecked}
+                                setChecked={props.setHeroesChecked}
+                                type="hero"
                             >
                             </MemoizedSetItem>
                         ))}
-                    </>): <></>}                
+                        {props.villains.length >= 1 ?
+                            (<> <ListSubheader sx={{ padding: 0.7, lineHeight: 1, color: "white", backgroundColor: "darkred" }}>Villains</ListSubheader> </>)
+                            : <></>}
+                        {props.villains.map((villain) => (
+                            <MemoizedSetItem
+                                key={villain.name}
+                                name={villain.name}
+                                image={villain.image}
+                                checked={props.villainsChecked}
+                                setChecked={props.setVillainsChecked}
+                                type="villain"
+                            >
+                            </MemoizedSetItem>
+                        ))}
+                        {props.antiheroes.length >= 1 ?
+                            (<> <ListSubheader sx={{ padding: 0.7, lineHeight: 1, color: "white", backgroundColor: "purple" }}>Antiheroes</ListSubheader> </>)
+                            : <></>}
+                        {props.antiheroes.map((antihero) => (
+                            <MemoizedAntiheroSetItem
+                                key={antihero.name}
+                                name={antihero.name}
+                                image={antihero.image}
+                                heroesChecked={props.heroesChecked}
+                                setHeroesChecked={props.setHeroesChecked}
+                                villainsChecked={props.villainsChecked}
+                                setVillainsChecked={props.setVillainsChecked}
+                            >
+                            </MemoizedAntiheroSetItem>
+                        ))}
+                        {props.locations.length >= 1 && props.locationsOption === true ?
+                            (<>
+                                <ListSubheader sx={{ padding: 0.7, lineHeight: 1, color: "white", backgroundColor: "dimgray" }}>Locations</ListSubheader>
+                                {props.locations.map((location) => (
+                                    <MemoizedSetItem
+                                        key={location.name}
+                                        name={location.name}
+                                        checked={props.locationsChecked}
+                                        setChecked={props.setLocationsChecked}
+                                        type="location"
+                                    >
+                                    </MemoizedSetItem>
+                                ))}
+                            </>) : <></>}
                     </List>
                 </AccordionDetails>
             </Accordion>
             <div className="checkbox-all-container">
-            {props.locationsOption===true ? (
-                <Checkbox
-                    className="set-checkbox"
-                    onChange={handleSetToggleWithLocations}
-                    sx={{marginTop:1.5}}
-                    checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
-                        && props.villains.every(villain => props.villainsChecked.includes(villain.name))
-                        && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
-                        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name))
-                        && props.locations.every(location => props.locationsChecked.includes(location.name)))}
-                ></Checkbox>
+                {props.locationsOption === true ? (
+                    <Checkbox
+                        className="set-checkbox"
+                        onChange={handleSetToggleWithLocations}
+                        sx={{ marginTop: 1.5 }}
+                        checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
+                            && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+                            && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+                            && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name))
+                            && props.locations.every(location => props.locationsChecked.includes(location.name)))}
+                    ></Checkbox>
                 ) : (
-                <Checkbox
-                    className="set-checkbox"
-                    onChange={handleSetToggle}
-                    sx={{marginTop:1.3}}
-                    checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
-                        && props.villains.every(villain => props.villainsChecked.includes(villain.name))
-                        && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
-                        && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))}
-                ></Checkbox>    
-                ) }
+                    <Checkbox
+                        className="set-checkbox"
+                        onChange={handleSetToggle}
+                        sx={{ marginTop: 1.5 }}
+                        checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
+                            && props.villains.every(villain => props.villainsChecked.includes(villain.name))
+                            && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
+                            && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))}
+                    ></Checkbox>
+                )}
             </div>
         </div>
     )
