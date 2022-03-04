@@ -29,7 +29,7 @@ export default function SetItem(props) {
     else if (props.type === "villain") {
         backgroundColor = "#FF9999"
         backgroundColor2 = "#FFE6E6"
-        backgroundGrad = 'pink-grad3.svg'
+        backgroundGrad = 'red-grad.svg'
         checkColor = "firebrick"
     }
     else if (props.type === "location") {
@@ -74,7 +74,7 @@ export default function SetItem(props) {
                     src={props.image}
                 />
             </ListItemAvatar> */}
-            <ListItemText primary={`${props.name}`} sx={{marginLeft:10}}/>
+            <ListItemText primary={`${props.name}`} sx={{marginLeft:9}}/>
         </ListItem>
         <Divider />
         </>

@@ -50,7 +50,7 @@ export default function AntiheroSetItem(props) {
     return (
         <ListItem
             // sx={{backgroundColor:backgroundColor}}
-            sx={{ backgroundImage:`url(${props.image}), "url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"18%, 100%" }}
+            sx={{ backgroundImage:`url(${props.image}), url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"21%, 100%" }}
             secondaryAction={
                 <>
                 <Checkbox
@@ -68,14 +68,14 @@ export default function AntiheroSetItem(props) {
                 />
                 </>
             }>
-            <ListItemAvatar>
+            {/* <ListItemAvatar>
             <Avatar
                     sx={{borderStyle:"solid", borderWidth:2, borderColor:"#666666"}}
                     alt={props.name}
                     src={props.image}
                 />
-            </ListItemAvatar>
-            <ListItemText primary={`${props.name}`} />
+            </ListItemAvatar> */}
+            <ListItemText primary={`${props.name}`} sx={{marginLeft:10}}/>
         </ListItem>
     )
 }
