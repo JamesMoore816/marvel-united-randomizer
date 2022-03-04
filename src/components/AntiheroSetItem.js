@@ -50,7 +50,7 @@ export default function AntiheroSetItem(props) {
     return (
         <ListItem
             // sx={{backgroundColor:backgroundColor}}
-            sx={{ backgroundImage:`url(${props.image}), url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"18%, 100%" }}
+            sx={{ backgroundImage:`url(${props.image}), "url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"18%, 100%" }}
             secondaryAction={
                 <>
                 <Checkbox
