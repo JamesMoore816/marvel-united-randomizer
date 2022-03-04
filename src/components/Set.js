@@ -103,12 +103,12 @@ export default function Set(props) {
 
     return (
         <div className="accordion-div">
-            <Accordion className="set-accordion" elevation={0} square sx={{ width:"90%", maxWidth:400, borderStyle:"solid", borderWidth:"1px", borderColor:"#666666" }}>
+            <Accordion disableGutters className="set-accordion" elevation={0} square sx={{ width:420, borderStyle:"solid", borderWidth:"1px", borderColor:"#666666" }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{ height:"auto"}}
+                    sx={{ height:"auto" }}
                 >
                     <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar>
                     <Typography>{props.title}</Typography>
@@ -175,10 +175,12 @@ export default function Set(props) {
                     </List>
                 </AccordionDetails>
             </Accordion>
+            <div className="checkbox-all-container">
             {props.locationsOption===true ? (
                 <Checkbox
                     className="set-checkbox"
                     onChange={handleSetToggleWithLocations}
+                    sx={{marginTop:1.5}}
                     checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
                         && props.villains.every(villain => props.villainsChecked.includes(villain.name))
                         && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
@@ -189,12 +191,14 @@ export default function Set(props) {
                 <Checkbox
                     className="set-checkbox"
                     onChange={handleSetToggle}
+                    sx={{marginTop:1.3}}
                     checked={(props.heroes.every(hero => props.heroesChecked.includes(hero.name))
                         && props.villains.every(villain => props.villainsChecked.includes(villain.name))
                         && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero.name))
                         && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero.name)))}
                 ></Checkbox>    
                 ) }
+            </div>
         </div>
     )
 }

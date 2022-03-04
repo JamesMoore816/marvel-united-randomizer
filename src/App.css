@@ -45,26 +45,27 @@
   }
 }
 
-.set-accordion {
+/* .set-accordion {
   margin-left: auto !important;
   margin-right: 0 !important;
-}
+} */
 
 .accordion-div {
+  margin-left: auto !important;
+  margin-right: auto !important;
   display: flex;
+  max-width: 90%;
+  justify-content: center;
   vertical-align: top !important;
 }
 
-.set-checkbox {
-  /* margin-top: 12px !important; */
-  margin-right: auto !important;
-  display: inline-block !important;
-  vertical-align: center !important;
-}
+/* .checkbox-all-container {
+  border-style:solid;
+} */
 
 .options-list {
   display: flex;
-  width:480px;
+  width: 420px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
