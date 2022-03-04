@@ -8,6 +8,7 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
+import Button from '@mui/material/Button';
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
@@ -56,6 +57,7 @@ export default function OptionsMenu(props) {
                     <ListItemText primary={"Number of heroes"} /> 
                 </ListItem>
             </List>
+            <Button variant="contained">Randomize!</Button>
             {/* <FormControl>
                 <FormLabel id="demo-radio-buttons-group-label">Number of Heroes</FormLabel>
                 <RadioGroup
