@@ -50,20 +50,20 @@ export default function AntiheroSetItem(props) {
     return (
         <ListItem
             // sx={{backgroundColor:backgroundColor}}
-            sx={{ backgroundImage:`url(${props.char.image}), url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"21%, 100%" }}
+            sx={{ backgroundImage:`url(${props.entry.image}), url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"21%, 100%" }}
             secondaryAction={
                 <>
                 <Checkbox
                     edge="end"
-                    onChange={handleHeroToggle(props.char)}
-                    checked={props.heroesChecked.indexOf(props.char) !== -1}
-                    inputProps={{ 'aria-labelledby': props.char.name }}
+                    onChange={handleHeroToggle(props.entry)}
+                    checked={props.heroesChecked.indexOf(props.entry) !== -1}
+                    inputProps={{ 'aria-labelledby': props.entry.name }}
                     sx={{'&.Mui-checked': {color: "royalblue"}}}
                 /><Checkbox
                     edge="end"
-                    onChange={handleVillainToggle(props.char)}
-                    checked={props.villainsChecked.indexOf(props.char) !== -1}
-                    inputProps={{ 'aria-labelledby': props.char.name }}
+                    onChange={handleVillainToggle(props.entry)}
+                    checked={props.villainsChecked.indexOf(props.entry) !== -1}
+                    inputProps={{ 'aria-labelledby': props.entry.name }}
                     sx={{'&.Mui-checked': {color: "firebrick"}}}
                 />
                 </>
@@ -75,7 +75,7 @@ export default function AntiheroSetItem(props) {
                     src={props.image}
                 />
             </ListItemAvatar> */}
-            <ListItemText primary={`${props.char.name}`} sx={{marginLeft:10}}/>
+            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:10}}/>
         </ListItem>
     )
 }

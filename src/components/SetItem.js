@@ -57,13 +57,13 @@ export default function SetItem(props) {
         <ListItem
             // sx={{backgroundColor:backgroundColor}}
             // sx={{ backgroundImage: }}
-            sx={{ backgroundImage:`url(${props.char.image}), url(${backgroundGrad})`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"21%, 100%" }}
+            sx={{ backgroundImage:`url(${props.entry.image}), url(${backgroundGrad})`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"21%, 100%" }}
             secondaryAction={
                 <Checkbox
                     edge="end"
-                    onChange={handleToggle(props.char)}
-                    checked={props.checked.indexOf(props.char) !== -1}
-                    inputProps={{ 'aria-labelledby': props.char.name }}
+                    onChange={handleToggle(props.entry)}
+                    checked={props.checked.indexOf(props.entry) !== -1}
+                    inputProps={{ 'aria-labelledby': props.entry.name }}
                     sx={{'&.Mui-checked': {color: checkColor}}}
                 />
             }>
@@ -74,7 +74,7 @@ export default function SetItem(props) {
                     src={props.image}
                 />
             </ListItemAvatar> */}
-            <ListItemText primary={`${props.char.name}`} sx={{marginLeft:9}}/>
+            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:9}}/>
         </ListItem>
         <Divider />
         </>

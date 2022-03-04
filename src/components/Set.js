@@ -120,7 +120,7 @@ export default function Set(props) {
                         {props.heroes.map((hero) => (
                             <MemoizedSetItem
                                 key={hero.name}
-                                char={hero}
+                                entry={hero}
                                 // name={hero.name}
                                 // image={hero.image}
                                 checked={props.heroesChecked}
@@ -135,7 +135,7 @@ export default function Set(props) {
                         {props.villains.map((villain) => (
                             <MemoizedSetItem
                                 key={villain.name}
-                                char={villain}
+                                entry={villain}
                                 // name={villain.name}
                                 // image={villain.image}
                                 checked={props.villainsChecked}
@@ -150,7 +150,7 @@ export default function Set(props) {
                         {props.antiheroes.map((antihero) => (
                             <MemoizedAntiheroSetItem
                                 key={antihero.name}
-                                char={antihero}
+                                entry={antihero}
                                 // name={antihero.name}
                                 // image={antihero.image}
                                 heroesChecked={props.heroesChecked}
@@ -166,7 +166,8 @@ export default function Set(props) {
                                 {props.locations.map((location) => (
                                     <MemoizedSetItem
                                         key={location.name}
-                                        name={location.name}
+                                        entry={location}
+                                        // name={location.name}
                                         checked={props.locationsChecked}
                                         setChecked={props.setLocationsChecked}
                                         type="location"
