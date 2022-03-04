@@ -480,10 +480,6 @@ export const data = [
                         "image": "/images/Spider-Woman.png"
                     },
                     {
-                        "name": "Venom",
-                        "image": "/images/Venom.png"
-                    },
-                    {
                         "name": "Shang Chi",
                         "image": "/images/ShangChi.png"
                     },

@@ -17,21 +17,26 @@ import React from 'react'
 
 export default function SetItem(props) {
     let backgroundColor = ""
+    let backgroundColor2 = ""
+    let backgroundGrad = ""
     let checkColor = ""
     if (props.type === "hero") {
-        backgroundColor = "lightblue"
+        backgroundColor = "#99DDFF"
+        backgroundColor2 = "#E6F7FF"
+        backgroundGrad = 'blue-grad.svg'
         checkColor = "royalblue"
     }
     else if (props.type === "villain") {
-        backgroundColor = "lightpink"
+        backgroundColor = "#FF9999"
+        backgroundColor2 = "#FFE6E6"
+        backgroundGrad = 'pink-grad3.svg'
         checkColor = "firebrick"
     }
     else if (props.type === "location") {
-        backgroundColor = "lightgray"
+        backgroundColor = "#CCCCCC"
+        backgroundColor2 = "#F2F2F2"
+        backgroundGrad = 'gray-grad.svg'
         checkColor = "black"
-    }
-    else if (props.type === "location") {
-        backgroundColor = "thistle"
     }
 
     const handleToggle = (value) => () => {
@@ -50,7 +55,9 @@ export default function SetItem(props) {
     return (
         <>
         <ListItem
-            sx={{backgroundColor:backgroundColor}}
+            // sx={{backgroundColor:backgroundColor}}
+            // sx={{ backgroundImage: }}
+            sx={{ backgroundImage:`url(${props.image}), url(${backgroundGrad})`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"18%, 100%" }}
             secondaryAction={
                 <Checkbox
                     edge="end"
@@ -60,16 +67,16 @@ export default function SetItem(props) {
                     sx={{'&.Mui-checked': {color: checkColor}}}
                 />
             }>
-            <ListItemAvatar>
-                <Avatar
+            {/* <ListItemAvatar>
+                <Avatar variant="square"
                     sx={{borderStyle:"solid", borderWidth:2, borderColor:"#666666"}}
                     alt={props.name}
                     src={props.image}
                 />
-            </ListItemAvatar>
-            <ListItemText primary={`${props.name}`} />
+            </ListItemAvatar> */}
+            <ListItemText primary={`${props.name}`} sx={{marginLeft:9}}/>
         </ListItem>
-        {/* <Divider/> */}
+        <Divider />
         </>
     )
 }

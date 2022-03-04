@@ -16,7 +16,8 @@ import { blue, pink, red } from '@mui/material/colors';
 import React from 'react'
 
 export default function AntiheroSetItem(props) {
-    let backgroundColor = "thistle"
+    let backgroundColor = "#E6D1FA"
+    let backgroundColor2 = "#F3E6FF"
 
     const handleHeroToggle = (value) => () => {
         const currentIndex = props.heroesChecked.indexOf(value);
@@ -48,7 +49,8 @@ export default function AntiheroSetItem(props) {
 
     return (
         <ListItem
-            sx={{backgroundColor:backgroundColor}}
+            // sx={{backgroundColor:backgroundColor}}
+            sx={{ backgroundImage:`url(${props.image}), url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"18%, 100%" }}
             secondaryAction={
                 <>
                 <Checkbox
@@ -56,13 +58,13 @@ export default function AntiheroSetItem(props) {
                     onChange={handleHeroToggle(props.name)}
                     checked={props.heroesChecked.indexOf(props.name) !== -1}
                     inputProps={{ 'aria-labelledby': props.name }}
-                    sx={{'&.Mui-checked': {color: blue[700]}}}
+                    sx={{'&.Mui-checked': {color: "royalblue"}}}
                 /><Checkbox
                     edge="end"
                     onChange={handleVillainToggle(props.name)}
                     checked={props.villainsChecked.indexOf(props.name) !== -1}
                     inputProps={{ 'aria-labelledby': props.name }}
-                    sx={{'&.Mui-checked': {color: red[700]}}}
+                    sx={{'&.Mui-checked': {color: "firebrick"}}}
                 />
                 </>
             }>
