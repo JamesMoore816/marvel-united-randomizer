@@ -1,5 +1,8 @@
 import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
@@ -28,15 +31,32 @@ export default function OptionsMenu(props) {
 
     return (
         <div className="options-list">
-            <FormGroup>
-                <FormControlLabel
-                    control={<Checkbox checked={props.locationsOption === true} onChange={toggleLocations} />}
-                    label="Include locations" />
-                <FormControlLabel
-                    control={<Checkbox checked={props.allowDupes === true} onChange={toggleDupes} />}
-                    label="Allow multiple versions of same character" />
-            </FormGroup>
-            <FormControl>
+            <List>
+                <ListItem
+                    secondaryAction={<Checkbox edge="end" checked={props.locationsOption === true} onChange={toggleLocations} />}>
+                    <ListItemText primary={"Include locations"} />
+                </ListItem>
+                <ListItem
+                    secondaryAction={<Checkbox edge="end" checked={props.allowDupes === true} onChange={toggleDupes} />}>
+                    <ListItemText primary={"Allow multiple versions of same character"} />
+                </ListItem>
+                <ListItem
+                    secondaryAction={
+                        <RadioGroup row
+                            edge="end"
+                            aria-labelledby="number-of-heroes-radio-buttons"
+                            defaultValue="2"
+                            name="number-of-heroes"
+                            onChange={toggleNumHeroes}
+                        >
+                        <FormControlLabel value="2" control={<Radio />} label="2" labelPlacement="start"/>
+                        <FormControlLabel value="3" control={<Radio />} label="3" labelPlacement="start"/>
+                        <FormControlLabel value="4" control={<Radio />} label="4" labelPlacement="start"/>
+                    </RadioGroup>} >
+                    <ListItemText primary={"Number of heroes"} /> 
+                </ListItem>
+            </List>
+            {/* <FormControl>
                 <FormLabel id="demo-radio-buttons-group-label">Number of Heroes</FormLabel>
                 <RadioGroup
                     aria-labelledby="number-of-heroes-radio-buttons"
@@ -48,7 +68,7 @@ export default function OptionsMenu(props) {
                     <FormControlLabel value="3" control={<Radio />} label="3" />
                     <FormControlLabel value="4" control={<Radio />} label="4" />
                 </RadioGroup>
-            </FormControl>
+            </FormControl> */}
         </div>
     )
 }

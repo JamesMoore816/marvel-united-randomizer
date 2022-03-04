@@ -65,8 +65,8 @@
 } */
 
 .options-list {
-  display: flex;
   width: 420px;
+  max-width: 90%;
   margin-left: auto !important;
   margin-right: auto !important;
 }
