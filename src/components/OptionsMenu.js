@@ -17,7 +17,6 @@ export default function OptionsMenu(props) {
 
     const toggleLocations = () => {
         props.setLocationsOption(!props.locationsOption);
-        console.log(props)
     }
 
     const toggleDupes = () => {

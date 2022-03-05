@@ -14,8 +14,10 @@ function App() {
   const [locationsOption, setLocationsOption] = useState(false)
   const [allowDupes, setAllowDupes] = useState(false)
   const [numHeroes, setNumHeroes] = useState("2")
-
-  console.log(data[0].sets)
+  const [view, setView] = useState("main")
+  const [heroesResults, setHeroesResults] = useState([])
+  const [villainResults, setVillainResults] = useState([])
+  const [locationsResults, setLocationsResults] = useState([])
 
   const [open, setOpen] = useState(false);
   const handleTooltipClose = () => {
@@ -27,23 +29,35 @@ function App() {
 
   const handleSubmit = () => {
     if (heroesChecked.length > parseInt(numHeroes) + 1 && villainsChecked.length > 1) {
-      let shuffledHeroes = heroesChecked.sort(() => Math.random() - 0.5)
-      let shuffledVillains = villainsChecked.sort(() => Math.random() - 0.5)
-      let randomResults = []
+      let shuffledHeroes = heroesChecked.slice(1, heroesChecked.length).sort(() => Math.random() - 0.5)
+      let shuffledVillains = villainsChecked.slice(1, villainsChecked.length).sort(() => Math.random() - 0.5)
+      let tempHeroes = []
+      let tempVillain = []
+      let tempLocations = []
 
-      for (let villain of shuffledVillains) {
-        if (villain !== 1 && randomResults.length === 0) randomResults.push(villain)
+      tempVillain.push(shuffledVillains[0])
+
+      for (let i=0; i < numHeroes; i++) {
+        tempHeroes.push(shuffledHeroes[i])
       }
-      for (let hero of shuffledHeroes) {
-        if (hero !== 1 && !randomResults.includes(hero) && randomResults.length <= parseInt(numHeroes)) randomResults.push(hero)
-      }
+
       if (locationsOption === true) {
-        let shuffledLocations = locationsChecked.sort(() => Math.random() - 0.5)
-        for (let location of shuffledLocations) {
-          if (location !== 1 && !randomResults.includes(location) && randomResults.length <= parseInt(numHeroes) + 6) randomResults.push(location)
+        if (locationsChecked.length < 7) {
+          handleTooltipOpen()
+          console.log("not enough locations")
+          return "error/exit"
+        }
+        let shuffledLocations = locationsChecked.slice(1, locationsChecked.length).sort(() => Math.random() - 0.5)
+        for (let i=0; i < 6; i++) {
+          tempLocations.push(shuffledLocations[i])
         }
       }
-      console.log(randomResults)
+      setVillainResults(tempVillain)
+      setHeroesResults(tempHeroes)
+      setLocationsResults(tempLocations)
+      console.log(tempVillain)
+      console.log(tempHeroes)
+      console.log(tempLocations)
     }
     else handleTooltipOpen()
   }
@@ -52,6 +66,7 @@ function App() {
     <>
       <div className="App">
         <h1>Marvel United Randomizer</h1>
+        <div className="main-menu-container">
         <MemoizedOptionsMenu
           locationsOption={locationsOption}
           setLocationsOption={setLocationsOption}
@@ -73,9 +88,9 @@ function App() {
               disableHoverListener
               disableTouchListener
               placement="right"
-              title="Not enough data to randomize!"
+              title="Add more data!"
             >
-              <Button variant="contained" sx={{ marginBottom: 3 }} onClick={() => { handleSubmit() }}>Randomize!</Button>
+              <Button variant="contained" sx={{ marginBottom: 2 }} onClick={() => { handleSubmit() }}>Randomize!</Button>
             </Tooltip>
           </div>
         </ClickAwayListener>
@@ -97,6 +112,10 @@ function App() {
             locationsOption={locationsOption}
           />
         ))}
+        </div>
+        <div className="results-container">
+
+        </div>
       </div>
     </>
   );
