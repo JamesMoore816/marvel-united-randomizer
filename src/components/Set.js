@@ -83,17 +83,17 @@ export default function Set(props) {
         else {
 
             for (let hero of props.heroes) {
-                if (!tempHeroes.includes(hero.name)) { tempHeroes.push(hero.name) }
+                if (!tempHeroes.includes(hero)) { tempHeroes.push(hero) }
             }
             for (let villain of props.villains) {
-                if (!tempVillains.includes(villain.name)) { tempVillains.push(villain.name) }
+                if (!tempVillains.includes(villain)) { tempVillains.push(villain) }
             }
             for (let antihero of props.antiheroes) {
-                if (!tempHeroes.includes(antihero.name)) { tempHeroes.push(antihero.name) }
-                if (!tempVillains.includes(antihero.name)) { tempVillains.push(antihero.name) }
+                if (!tempHeroes.includes(antihero)) { tempHeroes.push(antihero) }
+                if (!tempVillains.includes(antihero)) { tempVillains.push(antihero) }
             }
             for (let location of props.locations) {
-                if (!tempLocations.includes(location.name)) { tempLocations.push(location.name) }
+                if (!tempLocations.includes(location)) { tempLocations.push(location) }
             }
             props.setHeroesChecked(tempHeroes)
             props.setVillainsChecked(tempVillains)
