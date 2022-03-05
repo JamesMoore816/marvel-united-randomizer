@@ -985,7 +985,7 @@ export const data = [
                 "image": "/images/FirstClass.png",
                 "heroes": [
                     {
-                        "name": "Cyclops (First Class)",
+                        "name": "Cyclops",
                         "image": "",
                         "dupe-check-id": "Scott Summers"
                     },
@@ -995,12 +995,12 @@ export const data = [
                         "dupe-check-id": "Jean Grey"
                     },
                     {
-                        "name": "Beast (First Class)",
+                        "name": "Beast",
                         "image": "",
                         "dupe-check-id": "Hank McCoy"
                     },
                     {
-                        "name": "Iceman (First Class)",
+                        "name": "Iceman",
                         "image": "",
                         "dupe-check-id": "Bobby Drake"
                     },

@@ -21,10 +21,6 @@ import React from 'react';
 
 
 export default function Set(props) {
-    // const [allChecked, setAllChecked] = useState(false)
-    // const [heroesChecked, setHeroesChecked] = useState([1])
-    // const [villainsChecked, setVillainsChecked] = useState([1])
-    // const [localLocationsChecked, setLocalLocationsChecked] = useState([1])
 
     const handleSetToggle = () => {
         let tempHeroes = [...props.heroesChecked]

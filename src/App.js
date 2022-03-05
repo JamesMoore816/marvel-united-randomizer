@@ -3,9 +3,9 @@ import { data } from './data.js';
 import Set from './components/Set'
 import MemoizedSet from './components/Set'
 import MemoizedOptionsMenu from './components/OptionsMenu'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import OptionsMenu from './components/OptionsMenu'
-import { Button, Tooltip, ClickAwayListener } from '@mui/material';
+import { Button, Tooltip, ClickAwayListener, List, ListItem, ListItemText, Typography } from '@mui/material';
 
 function App() {
   const [heroesChecked, setHeroesChecked] = useState([1])
@@ -26,6 +26,20 @@ function App() {
   const handleTooltipOpen = () => {
     setOpen(true);
   };
+
+  console.log(data[0].sets)
+
+  useEffect(() => {
+    for (let i=0; i < data[0].sets.length; i++) {
+      data[0].sets[i].heroes.every(object => object["set"] = data[0].sets[i].title)
+      data[0].sets[i].villains.every(object => object["set"] = data[0].sets[i].title)
+      data[0].sets[i].locations.every(object => object["set"] = data[0].sets[i].title)
+      data[0].sets[i].antiheroes.every(object => object["set"] = data[0].sets[i].title)
+    }
+    console.log(data[0].sets)
+    console.log("use effect runs")
+  }, []
+  )
 
   const handleSubmit = () => {
     if (heroesChecked.length > parseInt(numHeroes) + 1 && villainsChecked.length > 1) {
@@ -115,18 +129,36 @@ function App() {
               />
             ))}
           </div>) : (
+          <>
           <div className="results-container">
+          <List className="results-list">
+            <div className="hero-results-list">
+              <Typography>Heroes</Typography>
             {heroesResults.map((hero) => (
-              <p>{hero.name}</p>
+            <ListItem className="hero-result" key={`result-${hero.name}`}>
+              <ListItemText primary={hero.name} secondary={hero.set}/>
+            </ListItem>
             ))}
-            <p>{villainResults[0].name}</p>
+            </div>
+            <div className="villain-results-list">
+            <Typography>Villain</Typography>
+            <ListItem className="villain-result">
+              <ListItemText primary={villainResults[0].name} secondary={villainResults[0].set}/></ListItem>
+            </div>
+            {locationsOption===true ? (
+            <div className="location-results-list">
+            <Typography>Locations</Typography>
             {locationsResults.map((location) => (
-              <p>{location.name}</p>
+              <ListItem className="location-result" key={`result-${location.name}`}>
+                <ListItemText primary={location.name} secondary={location.set}/>
+              </ListItem>
             ))}
+            </div> ) : (<></>)}
+            </List>
             <Button variant="contained" sx={{marginRight:1}} onClick={() => { handleSubmit() }}>Randomize Again</Button>
             <Button variant="contained" sx={{marginLeft:1}} onClick={() => { setView("main") }}>Go Back</Button>
           </div>
-        )}
+          </>)}
       </div>
     </>
   );

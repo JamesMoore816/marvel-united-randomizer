@@ -70,3 +70,15 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.results-container {
+  width: 420px;
+  
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* .hero-results-list, .villain-results-list, .location-results-list {
+  display: flex;
+  justify-content: space-around;
+} */
