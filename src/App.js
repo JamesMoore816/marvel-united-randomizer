@@ -28,8 +28,27 @@ function App() {
   console.log(data[0].sets)
 
   const handleSubmit = () => {
-    console.log("Submit Clicked")
+    if (heroesChecked.length > parseInt(numHeroes) + 1 && villainsChecked.length > 1) {
+      let shuffledHeroes = heroesChecked.sort(() => Math.random() - 0.5)
+      let shuffledVillains = villainsChecked.sort(() => Math.random() - 0.5)
+      let randomResults = []
+
+      for (let villain of shuffledVillains) {
+        if (villain !== 1 && randomResults.length === 0) randomResults.push(villain)
+      }
+      for (let hero of shuffledHeroes) {
+        if (hero !== 1 && !randomResults.includes(hero) && randomResults.length <= parseInt(numHeroes)) randomResults.push(hero)
+      }
+      if (locationsOption === true) {
+        let shuffledLocations = locationsChecked.sort(() => Math.random() - 0.5)
+        for (let location of shuffledLocations) {
+          if (location !== 1 && !randomResults.includes(location) && randomResults.length <= parseInt(numHeroes)+6) randomResults.push(location)
+        }
+      }
+      console.log(randomResults)
+    }
   }
+
 
   return (
     <>
@@ -42,6 +61,7 @@ function App() {
           setAllowDupes={setAllowDupes}
           numHeroes={numHeroes}
           setNumHeroes={setNumHeroes}
+          handleSubmit={handleSubmit}
         />
         <Button></Button>
         {data[0].sets.map((set) => (

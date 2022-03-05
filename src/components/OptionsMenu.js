@@ -57,7 +57,7 @@ export default function OptionsMenu(props) {
                     <ListItemText primary={"Number of heroes"} /> 
                 </ListItem>
             </List>
-            <Button variant="contained">Randomize!</Button>
+            <Button variant="contained" onClick={() => {props.handleSubmit()} }>Randomize!</Button>
             {/* <FormControl>
                 <FormLabel id="demo-radio-buttons-group-label">Number of Heroes</FormLabel>
                 <RadioGroup
