@@ -3,19 +3,9 @@ import { data } from './data.js';
 import Set from './components/Set'
 import MemoizedSet from './components/Set'
 import MemoizedOptionsMenu from './components/OptionsMenu'
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Checkbox from '@mui/material/Checkbox';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Avatar from '@mui/material/Avatar';
 import { useState } from 'react'
 import OptionsMenu from './components/OptionsMenu'
+import { Button, Tooltip, ClickAwayListener } from '@mui/material';
 
 function App() {
   const [heroesChecked, setHeroesChecked] = useState([1])
@@ -26,6 +16,14 @@ function App() {
   const [numHeroes, setNumHeroes] = useState("2")
 
   console.log(data[0].sets)
+
+  const [open, setOpen] = useState(false);
+  const handleTooltipClose = () => {
+    setOpen(false);
+  };
+  const handleTooltipOpen = () => {
+    setOpen(true);
+  };
 
   const handleSubmit = () => {
     if (heroesChecked.length > parseInt(numHeroes) + 1 && villainsChecked.length > 1) {
@@ -42,13 +40,13 @@ function App() {
       if (locationsOption === true) {
         let shuffledLocations = locationsChecked.sort(() => Math.random() - 0.5)
         for (let location of shuffledLocations) {
-          if (location !== 1 && !randomResults.includes(location) && randomResults.length <= parseInt(numHeroes)+6) randomResults.push(location)
+          if (location !== 1 && !randomResults.includes(location) && randomResults.length <= parseInt(numHeroes) + 6) randomResults.push(location)
         }
       }
       console.log(randomResults)
     }
+    else handleTooltipOpen()
   }
-
 
   return (
     <>
@@ -63,7 +61,24 @@ function App() {
           setNumHeroes={setNumHeroes}
           handleSubmit={handleSubmit}
         />
-        <Button></Button>
+        <ClickAwayListener onClickAway={handleTooltipClose}>
+          <div>
+            <Tooltip
+              PopperProps={{
+                disablePortal: true,
+              }}
+              onClose={handleTooltipClose}
+              open={open}
+              disableFocusListener
+              disableHoverListener
+              disableTouchListener
+              placement="right"
+              title="Not enough data to randomize!"
+            >
+              <Button variant="contained" sx={{ marginBottom: 3 }} onClick={() => { handleSubmit() }}>Randomize!</Button>
+            </Tooltip>
+          </div>
+        </ClickAwayListener>
         {data[0].sets.map((set) => (
           <MemoizedSet
             key={set.title}
