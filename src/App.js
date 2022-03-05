@@ -37,7 +37,7 @@ function App() {
 
       tempVillain.push(shuffledVillains[0])
 
-      for (let i=0; i < numHeroes; i++) {
+      for (let i = 0; i < numHeroes; i++) {
         tempHeroes.push(shuffledHeroes[i])
       }
 
@@ -48,13 +48,14 @@ function App() {
           return "error/exit"
         }
         let shuffledLocations = locationsChecked.slice(1, locationsChecked.length).sort(() => Math.random() - 0.5)
-        for (let i=0; i < 6; i++) {
+        for (let i = 0; i < 6; i++) {
           tempLocations.push(shuffledLocations[i])
         }
       }
       setVillainResults(tempVillain)
       setHeroesResults(tempHeroes)
       setLocationsResults(tempLocations)
+      setView("results")
       console.log(tempVillain)
       console.log(tempHeroes)
       console.log(tempLocations)
@@ -66,56 +67,66 @@ function App() {
     <>
       <div className="App">
         <h1>Marvel United Randomizer</h1>
-        <div className="main-menu-container">
-        <MemoizedOptionsMenu
-          locationsOption={locationsOption}
-          setLocationsOption={setLocationsOption}
-          allowDupes={allowDupes}
-          setAllowDupes={setAllowDupes}
-          numHeroes={numHeroes}
-          setNumHeroes={setNumHeroes}
-          handleSubmit={handleSubmit}
-        />
-        <ClickAwayListener onClickAway={handleTooltipClose}>
-          <div>
-            <Tooltip
-              PopperProps={{
-                disablePortal: true,
-              }}
-              onClose={handleTooltipClose}
-              open={open}
-              disableFocusListener
-              disableHoverListener
-              disableTouchListener
-              placement="right"
-              title="Add more data!"
-            >
-              <Button variant="contained" sx={{ marginBottom: 2 }} onClick={() => { handleSubmit() }}>Randomize!</Button>
-            </Tooltip>
+        {view === "main" ? (
+          <div className="main-menu-container">
+            <MemoizedOptionsMenu
+              locationsOption={locationsOption}
+              setLocationsOption={setLocationsOption}
+              allowDupes={allowDupes}
+              setAllowDupes={setAllowDupes}
+              numHeroes={numHeroes}
+              setNumHeroes={setNumHeroes}
+              handleSubmit={handleSubmit}
+            />
+            <ClickAwayListener onClickAway={handleTooltipClose}>
+              <div>
+                <Tooltip
+                  PopperProps={{
+                    disablePortal: true,
+                  }}
+                  onClose={handleTooltipClose}
+                  open={open}
+                  disableFocusListener
+                  disableHoverListener
+                  disableTouchListener
+                  placement="right"
+                  title="Add more data!"
+                >
+                  <Button variant="contained" sx={{ marginBottom: 2 }} onClick={() => { handleSubmit() }}>Randomize!</Button>
+                </Tooltip>
+              </div>
+            </ClickAwayListener>
+            {data[0].sets.map((set) => (
+              <MemoizedSet
+                key={set.title}
+                title={set.title}
+                image={set.image}
+                heroes={set.heroes}
+                villains={set.villains}
+                locations={set.locations}
+                antiheroes={set.antiheroes}
+                heroesChecked={heroesChecked}
+                setHeroesChecked={setHeroesChecked}
+                villainsChecked={villainsChecked}
+                setVillainsChecked={setVillainsChecked}
+                locationsChecked={locationsChecked}
+                setLocationsChecked={setLocationsChecked}
+                locationsOption={locationsOption}
+              />
+            ))}
+          </div>) : (
+          <div className="results-container">
+            {heroesResults.map((hero) => (
+              <p>{hero.name}</p>
+            ))}
+            <p>{villainResults[0].name}</p>
+            {locationsResults.map((location) => (
+              <p>{location.name}</p>
+            ))}
+            <Button variant="contained" sx={{marginRight:1}} onClick={() => { handleSubmit() }}>Randomize Again</Button>
+            <Button variant="contained" sx={{marginLeft:1}} onClick={() => { setView("main") }}>Go Back</Button>
           </div>
-        </ClickAwayListener>
-        {data[0].sets.map((set) => (
-          <MemoizedSet
-            key={set.title}
-            title={set.title}
-            image={set.image}
-            heroes={set.heroes}
-            villains={set.villains}
-            locations={set.locations}
-            antiheroes={set.antiheroes}
-            heroesChecked={heroesChecked}
-            setHeroesChecked={setHeroesChecked}
-            villainsChecked={villainsChecked}
-            setVillainsChecked={setVillainsChecked}
-            locationsChecked={locationsChecked}
-            setLocationsChecked={setLocationsChecked}
-            locationsOption={locationsOption}
-          />
-        ))}
-        </div>
-        <div className="results-container">
-
-        </div>
+        )}
       </div>
     </>
   );
