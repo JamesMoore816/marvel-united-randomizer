@@ -3,6 +3,7 @@ import { data } from './data.js';
 import Set from './components/Set'
 import MemoizedSet from './components/Set'
 import MemoizedOptionsMenu from './components/OptionsMenu'
+import Results from './components/Results'
 import { useState, useEffect } from 'react'
 import OptionsMenu from './components/OptionsMenu'
 import { Button, Tooltip, ClickAwayListener, List, ListItem, ListItemText, Typography } from '@mui/material';
@@ -131,30 +132,12 @@ function App() {
           </div>) : (
           <>
           <div className="results-container">
-          <List className="results-list">
-            <div className="hero-results-list">
-              <Typography>Heroes</Typography>
-            {heroesResults.map((hero) => (
-            <ListItem className="hero-result" key={`result-${hero.name}`}>
-              <ListItemText primary={hero.name} secondary={hero.set}/>
-            </ListItem>
-            ))}
-            </div>
-            <div className="villain-results-list">
-            <Typography>Villain</Typography>
-            <ListItem className="villain-result">
-              <ListItemText primary={villainResults[0].name} secondary={villainResults[0].set}/></ListItem>
-            </div>
-            {locationsOption===true ? (
-            <div className="location-results-list">
-            <Typography>Locations</Typography>
-            {locationsResults.map((location) => (
-              <ListItem className="location-result" key={`result-${location.name}`}>
-                <ListItemText primary={location.name} secondary={location.set}/>
-              </ListItem>
-            ))}
-            </div> ) : (<></>)}
-            </List>
+            <Results
+              locationsOption={locationsOption}
+              heroesResults={heroesResults}
+              villainResults={villainResults}
+              locationsResults={locationsResults}
+            />
             <Button variant="contained" sx={{marginRight:1}} onClick={() => { handleSubmit() }}>Randomize Again</Button>
             <Button variant="contained" sx={{marginLeft:1}} onClick={() => { setView("main") }}>Go Back</Button>
           </div>

@@ -1,8 +1,5 @@
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
 import ListSubheader from '@mui/material/ListSubheader';
-import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Checkbox from '@mui/material/Checkbox';
 import Avatar from '@mui/material/Avatar';
@@ -117,8 +114,6 @@ export default function Set(props) {
                             <MemoizedSetItem
                                 key={hero.name}
                                 entry={hero}
-                                // name={hero.name}
-                                // image={hero.image}
                                 checked={props.heroesChecked}
                                 setChecked={props.setHeroesChecked}
                                 type="hero"
@@ -132,8 +127,6 @@ export default function Set(props) {
                             <MemoizedSetItem
                                 key={villain.name}
                                 entry={villain}
-                                // name={villain.name}
-                                // image={villain.image}
                                 checked={props.villainsChecked}
                                 setChecked={props.setVillainsChecked}
                                 type="villain"
@@ -147,8 +140,6 @@ export default function Set(props) {
                             <MemoizedAntiheroSetItem
                                 key={antihero.name}
                                 entry={antihero}
-                                // name={antihero.name}
-                                // image={antihero.image}
                                 heroesChecked={props.heroesChecked}
                                 setHeroesChecked={props.setHeroesChecked}
                                 villainsChecked={props.villainsChecked}
@@ -163,7 +154,6 @@ export default function Set(props) {
                                     <MemoizedSetItem
                                         key={location.name}
                                         entry={location}
-                                        // name={location.name}
                                         checked={props.locationsChecked}
                                         setChecked={props.setLocationsChecked}
                                         type="location"
