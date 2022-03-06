@@ -136,14 +136,14 @@ function App() {
           </div>) : (
           <>
           <div className="results-container">
+            <Button variant="contained" sx={{marginRight:1, marginTop:2}} onClick={() => { handleSubmit() }}>Randomize Again</Button>
+            <Button variant="contained" sx={{marginLeft:1, marginTop:2}} onClick={() => { setView("main") }}>Go Back</Button>
             <Results
               locationsOption={locationsOption}
               heroesResults={heroesResults}
               villainResults={villainResults}
               locationsResults={locationsResults}
             />
-            <Button variant="contained" sx={{marginRight:1, marginTop:2}} onClick={() => { handleSubmit() }}>Randomize Again</Button>
-            <Button variant="contained" sx={{marginLeft:1, marginTop:2}} onClick={() => { setView("main") }}>Go Back</Button>
           </div>
           </>)}
       </div>
