@@ -13,7 +13,7 @@ function App() {
   const [villainsChecked, setVillainsChecked] = useState([1])
   const [locationsChecked, setLocationsChecked] = useState([1])
   const [locationsOption, setLocationsOption] = useState(false)
-  const [allowDupes, setAllowDupes] = useState(false)
+  // const [allowDupes, setAllowDupes] = useState(false)
   const [numHeroes, setNumHeroes] = useState("2")
   const [view, setView] = useState("main")
   const [heroesResults, setHeroesResults] = useState([])
@@ -43,17 +43,23 @@ function App() {
   )
 
   const handleSubmit = () => {
-    if (heroesChecked.length > parseInt(numHeroes) + 1 && villainsChecked.length > 1) {
-      let shuffledHeroes = heroesChecked.slice(1, heroesChecked.length).sort(() => Math.random() - 0.5)
-      let shuffledVillains = villainsChecked.slice(1, villainsChecked.length).sort(() => Math.random() - 0.5)
+    if (heroesChecked.length > parseInt(numHeroes) + 2 && villainsChecked.length > 1) {
+      let heroesSliced = heroesChecked.slice(1, heroesChecked.length)
+      let villainsSliced = villainsChecked.slice(1, villainsChecked.length)
       let tempHeroes = []
       let tempVillain = []
       let tempLocations = []
+      
+      let randomVillain = villainsSliced[Math.floor(Math.random()*villainsSliced.length)]
+      tempVillain.push(randomVillain)
 
-      tempVillain.push(shuffledVillains[0])
-
-      for (let i = 0; i < numHeroes; i++) {
-        tempHeroes.push(shuffledHeroes[i])
+      while (tempHeroes.length < numHeroes) {
+        let randomHero = heroesSliced[Math.floor(Math.random()*heroesSliced.length)]
+        if (!tempHeroes.includes(randomHero) && randomHero!==tempVillain[0]) {
+          if (randomHero.dupecheckid==="" || randomHero.dupecheckid!==tempVillain[0].dupecheckid) {
+            tempHeroes.push(randomHero)
+          }
+        }
       }
 
       if (locationsOption === true) {
@@ -62,18 +68,16 @@ function App() {
           console.log("not enough locations")
           return "error/exit"
         }
-        let shuffledLocations = locationsChecked.slice(1, locationsChecked.length).sort(() => Math.random() - 0.5)
-        for (let i = 0; i < 6; i++) {
-          tempLocations.push(shuffledLocations[i])
+        let locationsSliced = locationsChecked.slice(1, locationsChecked.length)
+        while (tempLocations.length < 6) {
+          let randomLocation = locationsSliced[Math.floor(Math.random()*locationsSliced.length)]
+          if (!tempLocations.includes(randomLocation)) tempLocations.push(randomLocation)
         }
       }
       setVillainResults(tempVillain)
       setHeroesResults(tempHeroes)
       setLocationsResults(tempLocations)
       setView("results")
-      console.log(tempVillain)
-      console.log(tempHeroes)
-      console.log(tempLocations)
     }
     else handleTooltipOpen()
   }
@@ -87,8 +91,8 @@ function App() {
             <MemoizedOptionsMenu
               locationsOption={locationsOption}
               setLocationsOption={setLocationsOption}
-              allowDupes={allowDupes}
-              setAllowDupes={setAllowDupes}
+              // allowDupes={allowDupes}
+              // setAllowDupes={setAllowDupes}
               numHeroes={numHeroes}
               setNumHeroes={setNumHeroes}
               handleSubmit={handleSubmit}

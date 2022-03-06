@@ -19,9 +19,9 @@ export default function OptionsMenu(props) {
         props.setLocationsOption(!props.locationsOption);
     }
 
-    const toggleDupes = () => {
-        props.setAllowDupes(!props.allowDupes);
-    }
+    // const toggleDupes = () => {
+    //     props.setAllowDupes(!props.allowDupes);
+    // }
 
     const toggleNumHeroes = (event) => {
         if (props.numHeroes !== event.target.value) {
@@ -36,10 +36,10 @@ export default function OptionsMenu(props) {
                     secondaryAction={<Checkbox edge="end" checked={props.locationsOption === true} onChange={toggleLocations} />}>
                     <ListItemText primary={"Include locations"} />
                 </ListItem>
-                <ListItem
+                {/* <ListItem
                     secondaryAction={<Checkbox edge="end" checked={props.allowDupes === true} onChange={toggleDupes} />}>
                     <ListItemText primary={"Allow multiple versions of same character"} />
-                </ListItem>
+                </ListItem> */}
                 <ListItem
                     secondaryAction={
                         <RadioGroup row

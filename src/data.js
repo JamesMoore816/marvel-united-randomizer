@@ -8,54 +8,54 @@ export const data = [
                     {
                         "name": "Captain America",
                         "image": "/images/CaptainAmerica.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Iron Man",
                         "image": "/images/IronMan.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Hulk",
                         "image": "/images/Hulk.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Black Widow",
                         "image": "/images/BlackWidow.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Captain Marvel",
                         "image": "/images/CaptainMarvel.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Ant-Man",
                         "image": "/images/Ant-Man.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Wasp",
                         "image": "/images/Wasp.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Red Skull",
                         "image": "/images/RedSkull.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Ultron",
                         "image": "/images/Ultron.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Taskmaster",
                         "image": "/images/Taskmaster.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [
@@ -101,29 +101,29 @@ export const data = [
                     {
                         "name": "Spider-Man",
                         "image": "/images/Spider-Man.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Ghost-Spider",
                         "image": "/images/Ghost-Spider.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Miles Morales",
                         "image": "/images/MilesMorales.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Spider-Ham",
                         "image": "/images/Spider-Ham.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Green Goblin",
                         "image": "/images/GreenGoblin.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [
@@ -162,32 +162,32 @@ export const data = [
                     {
                         "name": "Doctor Octopus",
                         "image": "/images/DoctorOctopus.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Mysterio",
                         "image": "/images/Mysterio.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Kraven",
                         "image": "/images/Kraven.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Vulture",
                         "image": "/images/Vulture.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Electro",
                         "image": "/images/Electro.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Sandman",
                         "image": "/images/Sandman.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [],
@@ -200,24 +200,24 @@ export const data = [
                     {
                         "name": "Black Panther",
                         "image": "/images/BlackPanther.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Winter Soldier",
                         "image": "/images/WinterSoldier.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Shuri",
                         "image": "/images/Shuri.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Killmonger",
                         "image": "/images/Killmonger.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [
@@ -255,29 +255,29 @@ export const data = [
                     {
                         "name": "Thor",
                         "image": "/images/Thor.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Valkyrie",
                         "image": "/images/Valkyrie.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Korg",
                         "image": "/images/Korg.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Beta Ray Bill",
                         "image": "/images/BetaRayBill.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Loki",
                         "image": "/images/Loki.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [
@@ -315,29 +315,29 @@ export const data = [
                     {
                         "name": "Star-Lord",
                         "image": "/images/Star-Lord.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Rocket",
                         "image": "/images/Rocket.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Groot",
                         "image": "/images/Groot.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Gamora",
                         "image": "/images/Gamora.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Ronan",
                         "image": "/images/Ronan.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [
@@ -376,22 +376,22 @@ export const data = [
                     {
                         "name": "Thanos",
                         "image": "/images/Thanos.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Black Dwarf",
                         "image": "/images/BlackDwarf.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Ebony Maw",
                         "image": "/images/EbonyMaw.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Proxima Midnight",
                         "image": "/images/ProximaMidnight.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [
@@ -449,229 +449,229 @@ export const data = [
                     {
                         "name": "Hawkeye",
                         "image": "/images/Hawkeye.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Vision",
                         "image": "/images/Vision.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Scarlet Witch",
                         "image": "/images/ScarletWitch.png",
-                        "dupe-check-id": "Wanda Maximoff"
+                        "dupecheckid": "Wanda Maximoff"
                     },
                     {
                         "name": "Doctor Strange",
                         "image": "/images/DoctorStrange.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "War Machine",
                         "image": "/images/WarMachine.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Falcon",
                         "image": "/images/Falcon.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Squirrel Girl",
                         "image": "/images/SquirrelGirl.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Okoye",
                         "image": "/images/Okoye.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Nick Fury",
                         "image": "/images/NickFury.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Ms. Marvel",
                         "image": "/images/MsMarvel.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Daredevil",
                         "image": "/images/Daredevil.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Elektra",
                         "image": "/images/Elektra.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Iron Fist",
                         "image": "/images/IronFist.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Luke Cage",
                         "image": "/images/LukeCage.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Punisher",
                         "image": "/images/Punisher.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Jessica Jones",
                         "image": "/images/JessicaJones.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Mockingbird",
                         "image": "/images/Mockingbird.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Spider-Woman",
                         "image": "/images/Spider-Woman.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Shang Chi",
                         "image": "/images/ShangChi.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Spider-Man 2099",
                         "image": "/images/Spider-Man2099.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Venom",
                         "image": "/images/Venom.png",
-                        "dupe-check-id": "Eddie Brock"
+                        "dupecheckid": "Eddie Brock"
                     },
                     {
                         "name": "Black Cat",
                         "image": "/images/BlackCat.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "America Chavez",
                         "image": "/images/AmericaChavez.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "She-Hulk",
                         "image": "/images/She-Hulk.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Moon Knight",
                         "image": "/images/MoonKnight.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Blade",
                         "image": "/images/Blade.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Ghost Rider",
                         "image": "/images/GhostRider.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Nova",
                         "image": "/images/Nova.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Nebula",
                         "image": "/images/Nebula.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Mantis",
                         "image": "/images/Mantis.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Drax The Destroyer",
                         "image": "/images/DraxTheDestroyer.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Howard the Duck",
                         "image": "/images/HowardTheDuck.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Yondu",
                         "image": "/images/Yondu.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Adam Warlock",
                         "image": "/images/AdamWarlock.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Corvus Glaive",
                         "image": "/images/CorvusGlaive.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "M.O.D.O.K.",
                         "image": "/images/MODOK.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Kingpin",
                         "image": "/images/Kingpin.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Bullseye",
                         "image": "/images/Bullseye.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Rhino",
                         "image": "/images/Rhino.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Baron Zemo",
                         "image": "/images/BaronZemo.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Kang",
                         "image": "/images/Kang.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Carnage",
                         "image": "/images/Carnage.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Venom",
                         "image": "/images/Venom.png",
-                        "dupe-check-id": "Eddie Brock"
+                        "dupecheckid": "Eddie Brock"
                     },
                     {
                         "name": "Hela",
                         "image": "/images/Hela.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Dormammu",
                         "image": "/images/Dormammu.png",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [],
@@ -684,44 +684,44 @@ export const data = [
                     {
                         "name": "Wolverine",
                         "image": "",
-                        "dupe-check-id": "Logan"
+                        "dupecheckid": "Logan"
                     },
                     {
                         "name": "Cyclops",
                         "image": "",
-                        "dupe-check-id": "Scott Summers"
+                        "dupecheckid": "Scott Summers"
                     },
                     {
                         "name": "Storm",
                         "image": "",
-                        "dupe-check-id": "Ororo Munroe"
+                        "dupecheckid": "Ororo Munroe"
                     },
                     {
                         "name": "Jean Grey",
                         "image": "",
-                        "dupe-check-id": "Jean Grey"
+                        "dupecheckid": "Jean Grey"
                     },
                     {
                         "name": "Beast",
                         "image": "",
-                        "dupe-check-id": "Hank McCoy"
+                        "dupecheckid": "Hank McCoy"
                     },
                     {
                         "name": "Professor X",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     }
                 ],
                 "villains": [
                     {
                         "name": "Sabretooth",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Juggernaut",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     }
                 ],
                 "locations": [
@@ -762,12 +762,12 @@ export const data = [
                     {
                         "name": "Magneto",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Mystique",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     }
                 ]
             },
@@ -778,34 +778,34 @@ export const data = [
                     {
                         "name": "Gambit",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Rogue",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Psylocke",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Jubilee",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Banshee",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Mister Sinister",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     }
                 ],
                 "locations": [
@@ -835,34 +835,34 @@ export const data = [
                     {
                         "name": "Colossus",
                         "image": "",
-                        "dupe-check-id": "Piotr Rasputin"
+                        "dupecheckid": "Piotr Rasputin"
                     },
                     {
                         "name": "Iceman",
                         "image": "",
-                        "dupe-check-id": "Bobby Drake"
+                        "dupecheckid": "Bobby Drake"
                     },
                     {
                         "name": "Archangel",
                         "image": "",
-                        "dupe-check-id": "Warren Worthington III"
+                        "dupecheckid": "Warren Worthington III"
                     },
                     {
                         "name": "Bishop",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Forge",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     }
                 ],
                 "villains": [
                     {
                         "name": "Sebastian Shaw",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [
@@ -892,29 +892,29 @@ export const data = [
                     {
                         "name": "Cable",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Domino",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Cannonball",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Shatterstar",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Stryfe",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [
@@ -945,22 +945,22 @@ export const data = [
                     {
                         "name": "Famine",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "War",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Pestilence",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Death",
                         "image": "",
-                        "dupe-check-id": "Warren Worthington III"
+                        "dupecheckid": "Warren Worthington III"
                     },
                 ],
                 "locations": [
@@ -987,39 +987,39 @@ export const data = [
                     {
                         "name": "Cyclops",
                         "image": "",
-                        "dupe-check-id": "Scott Summers"
+                        "dupecheckid": "Scott Summers"
                     },
                     {
                         "name": "Marvel Girl",
                         "image": "",
-                        "dupe-check-id": "Jean Grey"
+                        "dupecheckid": "Jean Grey"
                     },
                     {
                         "name": "Beast",
                         "image": "",
-                        "dupe-check-id": "Hank McCoy"
+                        "dupecheckid": "Hank McCoy"
                     },
                     {
                         "name": "Iceman",
                         "image": "",
-                        "dupe-check-id": "Bobby Drake"
+                        "dupecheckid": "Bobby Drake"
                     },
                     {
                         "name": "Angel",
                         "image": "",
-                        "dupe-check-id": "Warren Worthington III"
+                        "dupecheckid": "Warren Worthington III"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Quicksilver",
                         "image": "",
-                        "dupe-check-id": "Pietro Maximoff"
+                        "dupecheckid": "Pietro Maximoff"
                     },
                     {
                         "name": "Scarlet Witch",
                         "image": "",
-                        "dupe-check-id": "Wanda Maximoff"
+                        "dupecheckid": "Wanda Maximoff"
                     },
                 ],
                 "locations": [
@@ -1049,14 +1049,14 @@ export const data = [
                     {
                         "name": "Logan",
                         "image": "",
-                        "dupe-check-id": "Logan"
+                        "dupecheckid": "Logan"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Nimrod",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [],
@@ -1069,34 +1069,34 @@ export const data = [
                     {
                         "name": "Hope Summers",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Cyclops",
                         "image": "",
-                        "dupe-check-id": "Scott Summers"
+                        "dupecheckid": "Scott Summers"
                     },
                     {
                         "name": "Magik",
                         "image": "",
-                        "dupe-check-id": "Illyana Rasputin"
+                        "dupecheckid": "Illyana Rasputin"
                     },
                     {
                         "name": "Namor",
                         "image": "",
-                        "dupe-check-id": "Namor"
+                        "dupecheckid": "Namor"
                     },
                     {
                         "name": "Colossus",
                         "image": "",
-                        "dupe-check-id": "Piotr Rasputin"
+                        "dupecheckid": "Piotr Rasputin"
                     },
                     {
                         "name": "Emma Frost",
                         "image": "",
-                        "dupe-check-id": "Emma Frost"
+                        "dupecheckid": "Emma Frost"
                     },
                 ],
                 "locations": [],
@@ -1109,24 +1109,24 @@ export const data = [
                     {
                         "name": "Deadpool",
                         "image": "",
-                        "dupe-check-id": "Wade Wilson"
+                        "dupecheckid": "Wade Wilson"
                     },
                     {
                         "name": "Lady Deadpool",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Deadpool",
                         "image": "",
-                        "dupe-check-id": "Wade Wilson"
+                        "dupecheckid": "Wade Wilson"
                     },
                     {
                         "name": "Deadpool (Challenge)",
                         "image": "",
-                        "dupe-check-id": "Wade Wilson"
+                        "dupecheckid": "Wade Wilson"
                     },
                 ],
                 "locations": [
@@ -1139,7 +1139,7 @@ export const data = [
                     {
                         "name": "Bob, Agent of Hydra",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ]
             },
@@ -1150,27 +1150,27 @@ export const data = [
                     {
                         "name": "Mister Fantastic",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Invisible Woman",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Human Torch",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "The Thing",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Silver Surfer",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "villains": [],
@@ -1196,7 +1196,7 @@ export const data = [
                     {
                         "name": "Doctor Doom",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ]
             },
@@ -1206,274 +1206,274 @@ export const data = [
                     {
                         "name": "Polaris",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Feral",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Strong Guy",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Boom-Boom",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Longshot",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Dazzler",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Sunspot",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Magik",
                         "image": "",
-                        "dupe-check-id": "Illyana Rasputin"
+                        "dupecheckid": "Illyana Rasputin"
                     },
                     {
                         "name": "Firestar",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Warpath",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Phoenix",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Sunfire",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Wolfsbane",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Blink",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Havok",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Fantomex",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Captain Britain",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Mulitple Man",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Weapon X",
                         "image": "",
-                        "dupe-check-id": "Logan"
+                        "dupecheckid": "Logan"
                     },
                     {
                         "name": "Pixie",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Doop",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "X-23",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Mirage",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Warlock",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Kitty Pryde",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Gwenpool",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Guardian",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Puck",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Northstar",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Snowbird",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Sasquatch",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Nightcrawler",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Cloak",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Dagger",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Storm (Mohawk)",
                         "image": "",
-                        "dupe-check-id": "Ororo Munroe"
+                        "dupecheckid": "Ororo Munroe"
                     },
                     {
                         "name": "Old Man Logan",
                         "image": "",
-                        "dupe-check-id": "Logan"
+                        "dupecheckid": "Logan"
                     },
                 ],
                 "villains": [
                     {
                         "name": "Shadow King",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Callisto",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Deathbird",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Arcade",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Lady Deathstrike",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Sauron",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Silver Samurai",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Omega Red",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Brood Queen",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Mojo",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Dark Phoenix",
                         "image": "",
-                        "dupe-check-id": "Jean Grey"
+                        "dupecheckid": "Jean Grey"
                     },
                     {
                         "name": "Onslaught",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Avalanche",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Super Skrull",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Mastermind",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Toad",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Blob",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Pyro",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ],
                 "locations": [],
@@ -1481,27 +1481,27 @@ export const data = [
                     {
                         "name": "Legion",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Emma Frost",
                         "image": "",
-                        "dupe-check-id": "Emma Frost"
+                        "dupecheckid": "Emma Frost"
                     },
                     {
                         "name": "Namor",
                         "image": "",
-                        "dupe-check-id": "Namor"
+                        "dupecheckid": "Namor"
                     },
                     {
                         "name": "Spiral",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                     {
                         "name": "Marrow",
                         "image": "",
-                        "dupe-check-id": ""
+                        "dupecheckid": ""
                     },
                 ]
             },
