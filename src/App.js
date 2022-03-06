@@ -146,6 +146,7 @@ function App() {
             />
           </div>
           </>)}
+          <Typography className="footer" sx={{marginTop:2, marginBottom:0}}>This website has no official affiliation with Marvel United or its creators. All assets are property of Marvel and CMON.</Typography>
       </div>
     </>
   );

@@ -419,26 +419,6 @@ export const data = [
                         "name": "New York",
                         "image": ""
                     },
-                    {
-                        "name": "Wakanda Fields",
-                        "image": ""
-                    },
-                    {
-                        "name": "Quantum Tunnel",
-                        "image": ""
-                    },
-                    {
-                        "name": "Thanos' Palace",
-                        "image": ""
-                    },
-                    {
-                        "name": "Titan",
-                        "image": ""
-                    },
-                    {
-                        "name": "Sanctuary",
-                        "image": ""
-                    },
                 ],
                 "antiheroes": []
             },
