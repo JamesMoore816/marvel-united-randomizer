@@ -27,10 +27,16 @@ export default function Set(props) {
             && props.antiheroes.every(antihero => props.heroesChecked.includes(antihero))
             && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero)))) {
             for (let hero of props.heroes) {
-                tempHeroes.splice(tempHeroes.indexOf(hero))
+                tempHeroes.splice(tempHeroes.indexOf(hero), 1)
             }
             for (let villain of props.villains) {
-                tempVillains.splice(tempVillains.indexOf(villain))
+                tempVillains.splice(tempVillains.indexOf(villain), 1)
+            }
+            for (let hero of props.antiheroes) {
+                tempVillains.splice(tempVillains.indexOf(hero), 1)
+            }
+            for (let villain of props.antiheroes) {
+                tempVillains.splice(tempVillains.indexOf(villain), 1)
             }
             props.setHeroesChecked(tempHeroes)
             props.setVillainsChecked(tempVillains)
@@ -61,13 +67,19 @@ export default function Set(props) {
             && props.antiheroes.every(antihero => props.villainsChecked.includes(antihero))
             && props.locations.every(location => props.locationsChecked.includes(location)))) {
             for (let hero of props.heroes) {
-                tempHeroes.splice(tempHeroes.indexOf(hero))
+                tempHeroes.splice(tempHeroes.indexOf(hero), 1)
             }
             for (let villain of props.villains) {
-                tempVillains.splice(tempVillains.indexOf(villain))
+                tempVillains.splice(tempVillains.indexOf(villain), 1)
             }
             for (let location of props.locations) {
-                tempLocations.splice(tempLocations.indexOf(location))
+                tempLocations.splice(tempLocations.indexOf(location), 1)
+            }
+            for (let hero of props.antiheroes) {
+                tempVillains.splice(tempVillains.indexOf(hero), 1)
+            }
+            for (let villain of props.antiheroes) {
+                tempVillains.splice(tempVillains.indexOf(villain), 1)
             }
             props.setHeroesChecked(tempHeroes)
             props.setVillainsChecked(tempVillains)
