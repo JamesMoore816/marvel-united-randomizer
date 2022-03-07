@@ -16,25 +16,21 @@ import { useState } from 'react'
 import React from 'react'
 
 export default function SetItem(props) {
-    let backgroundColor = ""
-    let backgroundColor2 = ""
+    let itemBorderColor = ""
     let backgroundGrad = ""
     let checkColor = ""
     if (props.type === "hero") {
-        backgroundColor = "#99DDFF"
-        backgroundColor2 = "#E6F7FF"
+        itemBorderColor = "darkblue"
         backgroundGrad = 'blue-grad.svg'
         checkColor = "royalblue"
     }
     else if (props.type === "villain") {
-        backgroundColor = "#FF9999"
-        backgroundColor2 = "#FFE6E6"
+        itemBorderColor = "darkred"
         backgroundGrad = 'red-grad.svg'
         checkColor = "firebrick"
     }
     else if (props.type === "location") {
-        backgroundColor = "#CCCCCC"
-        backgroundColor2 = "#F2F2F2"
+        itemBorderColor = "dimgray"
         backgroundGrad = 'gray-grad.svg'
         checkColor = "black"
     }
@@ -65,9 +61,10 @@ export default function SetItem(props) {
                     sx={{'&.Mui-checked': {color: checkColor}}}
                 />
             }>
-            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:11}}/>
+                {/* <img className="char-icon" src={props.entry.image} /> */}
+            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:11 }}/>
         </ListItem>
-        <Divider />
+        {/* <Divider /> */}
         </>
     )
 }
