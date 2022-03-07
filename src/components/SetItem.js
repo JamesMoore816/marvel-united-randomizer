@@ -62,9 +62,9 @@ export default function SetItem(props) {
                 />
             }>
                 {/* <img className="char-icon" src={props.entry.image} /> */}
-            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:11 }}/>
+            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:10.5 }}/>
         </ListItem>
-        {/* <Divider /> */}
+        <Divider />
         </>
     )
 }

@@ -1,7 +1,8 @@
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Checkbox from '@mui/material/Checkbox';
-import React from 'react'
+import Divider from '@mui/material/Divider';
+import React from 'react';
 
 export default function AntiheroSetItem(props) {
 
@@ -34,6 +35,7 @@ export default function AntiheroSetItem(props) {
     };
 
     return (
+        <>
         <ListItem
             sx={{ backgroundImage:`url(${props.entry.image}), url(purple-grad.svg)`, backgroundRepeat:"no-repeat, repeat", backgroundPosition:"0 -18px, 0 0", backgroundSize:"21%, 100%" }}
             secondaryAction={
@@ -53,8 +55,10 @@ export default function AntiheroSetItem(props) {
                 />
                 </>
             }>
-            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:11}}/>
+            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:10.5}}/>
         </ListItem>
+        <Divider />
+        </>
     )
 }
 
