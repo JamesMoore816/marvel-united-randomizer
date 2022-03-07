@@ -109,7 +109,7 @@ function App() {
                   disableHoverListener
                   disableTouchListener
                   placement="right"
-                  title="Add more data!"
+                  title="Add more options!"
                 >
                   <Button variant="contained" sx={{ marginBottom: 2 }} onClick={() => { handleSubmit() }}>Randomize!</Button>
                 </Tooltip>
