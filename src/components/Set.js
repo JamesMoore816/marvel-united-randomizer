@@ -110,13 +110,13 @@ export default function Set(props) {
         <div className="accordion-div">
             <Accordion disableGutters className="set-accordion" elevation={0} square sx={{ width: 420, paddingBottom:0.5 }}>
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon sx={{color:"white", backgroundColor:"#444444", borderRadius:"100%"}}/>}
+                    expandIcon={<ExpandMoreIcon sx={{color:"white", backgroundColor:"rgba(0,0,0,.5)", borderRadius:"100%"}}/>}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     sx={{ height: "65px", backgroundImage:`url(${props.banner})`, backgroundSize:"100%", backgroundRepeat:"no-repeat", borderStyle: "solid", borderWidth: 1, borderColor: "#BBBBBB" }}
                 >
                     {/* <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar> */}
-                    <Typography sx={{color:"white", fontSize:"20px", backgroundColor:"black", padding:"0px 6px 3px 6px" }}>{props.title}</Typography>
+                    <Typography sx={{color:"white", fontSize:"20px", backgroundColor:"rgba(0,0,0,.5)", padding:"0px 6px 3px 6px" }}>{props.title}</Typography>
                     {/* <img className="set-logo" src={props.logo} alt={props.title}/> */}
                 </AccordionSummary>
                 <AccordionDetails sx={{ padding: 0 }}>
