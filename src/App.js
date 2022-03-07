@@ -120,6 +120,8 @@ function App() {
                 key={set.title}
                 title={set.title}
                 image={set.image}
+                logo={set.logo}
+                banner={set.banner}
                 heroes={set.heroes}
                 villains={set.villains}
                 locations={set.locations}

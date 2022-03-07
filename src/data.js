@@ -4,6 +4,8 @@ export const data = [
             {
                 "title": "Core Set",
                 "image": "/images/MarvelUnited.png",
+                "logo": "/images/logos/CoreSet.png",
+                "banner": "/images/banners/CoreSet.png",
                 "heroes": [
                     {
                         "name": "Captain America",
@@ -97,6 +99,8 @@ export const data = [
             {
                 "title": "Enter the Spider-Verse",
                 "image": "/images/EnterTheSpiderVerse.png",
+                "logo": "/images/logos/EnterTheSpiderVerse.png",
+                "banner": "/images/banners/EnterTheSpiderVerse.png",
                 "heroes": [
                     {
                         "name": "Spider-Man",
@@ -157,6 +161,8 @@ export const data = [
             {
                 "title": "Return of the Sinister Six",
                 "image": "/images/ReturnOfTheSinisterSix.png",
+                "logo": "/images/logos/ReturnOfTheSinisterSix.png",
+                "banner": "/images/banners/ReturnOfTheSinisterSix.png",
                 "heroes": [],
                 "villains": [
                     {
@@ -196,6 +202,8 @@ export const data = [
             {
                 "title": "Rise of the Black Panther",
                 "image": "/images/RiseOfTheBlackPanther.png",
+                "logo": "/images/logos/RiseOfTheBlackPanther.png",
+                "banner": "/images/banners/RiseOfTheBlackPanther.png",
                 "heroes": [
                     {
                         "name": "Black Panther",
@@ -251,6 +259,8 @@ export const data = [
             {
                 "title": "Tales of Asgard",
                 "image": "/images/TalesOfAsgard.png",
+                "logo": "/images/logos/TalesOfAsgard.png",
+                "banner": "/images/banners/TalesOfAsgard.png",
                 "heroes": [
                     {
                         "name": "Thor",
@@ -311,6 +321,8 @@ export const data = [
             {
                 "title": "Guardians of the Galaxy Remix",
                 "image": "/images/GuardiansOfTheGalaxyRemix.png",
+                "logo": "/images/logos/GuardiansOfTheGalaxyRemix.png",
+                "banner": "/images/banners/GuardiansOfTheGalaxyRemix.png",
                 "heroes": [
                     {
                         "name": "Star-Lord",
@@ -371,6 +383,8 @@ export const data = [
             {
                 "title": "The Infinity Gauntlet",
                 "image": "/images/TheInfinityGauntlet.png",
+                "logo": "/images/logos/TheInfinityGauntlet.png",
+                "banner": "/images/banners/TheInfinityGauntlet.png",
                 "heroes": [],
                 "villains": [
                     {
@@ -425,6 +439,8 @@ export const data = [
             {
                 "title": "Season 1 Promos",
                 "image": "/images/Season1Promos.png",
+                "logo": "/images/logos/Season1Promos.png",
+                "banner": "/images/banners/Season1Promos.png",
                 "heroes": [
                     {
                         "name": "Hawkeye",
@@ -660,6 +676,8 @@ export const data = [
             {
                 "title": "X-Men Core Set",
                 "image": "/images/X-Men.png",
+                "logo": "/images/logos/X-Men.png",
+                "banner": "/images/banners/X-Men.png",
                 "heroes": [
                     {
                         "name": "Wolverine",
@@ -754,6 +772,7 @@ export const data = [
             {
                 "title": "Blue Team",
                 "image": "/images/BlueTeam.png",
+                "logo": "/images/logos/BlueTeam.png",
                 "heroes": [
                     {
                         "name": "Gambit",
@@ -811,6 +830,7 @@ export const data = [
             {
                 "title": "Gold Team",
                 "image": "/images/GoldTeam.png",
+                "logo": "/images/logos/GoldTeam.png",
                 "heroes": [
                     {
                         "name": "Colossus",
@@ -868,6 +888,7 @@ export const data = [
             {
                 "title": "X-Force",
                 "image": "/images/X-Force.png",
+                "logo": "/images/logos/X-Force.png",
                 "heroes": [
                     {
                         "name": "Cable",
@@ -920,6 +941,7 @@ export const data = [
             {
                 "title": "The Horsemen of Apocalypse",
                 "image": "/images/TheHorsemenOfApocalypse.png",
+                "logo": "/images/logo/TheHorsemenOfApocalypse.png",
                 "heroes": [],
                 "villains": [
                     {
@@ -963,6 +985,7 @@ export const data = [
             {
                 "title": "First Class",
                 "image": "/images/FirstClass.png",
+                "logo": "/images/logos/FirstClass.png",
                 "heroes": [
                     {
                         "name": "Cyclops",
@@ -1025,6 +1048,7 @@ export const data = [
             {
                 "title": "Days of Future Past",
                 "image": "/images/DaysOfFuturePast.png",
+                "logo": "/images/logos/DaysOfFuturePast.png",
                 "heroes": [
                     {
                         "name": "Logan",
@@ -1045,6 +1069,7 @@ export const data = [
             {
                 "title": "Phoenix Five",
                 "image": "/images/PhoenixFive.png",
+                "logo": "/images/logos/PhoenixFive.png",
                 "heroes": [
                     {
                         "name": "Hope Summers",
@@ -1085,6 +1110,7 @@ export const data = [
             {
                 "title": "Deadpool",
                 "image": "/images/DeadpoolBox.png",
+                "logo": "/images/logos/Deadpool.png",
                 "heroes": [
                     {
                         "name": "Deadpool",
@@ -1126,6 +1152,7 @@ export const data = [
             {
                 "title": "Fantastic Four",
                 "image": "/images/FantasticFour.png",
+                "logo": "images/logos/FantasticFour.png",
                 "heroes": [
                     {
                         "name": "Mister Fantastic",
@@ -1182,6 +1209,8 @@ export const data = [
             },
             {
                 "title": "Season 2 Promos",
+                "image": "/images/Season2Promos.png",
+                "logo": "/images/logos/Season2Promos.png",
                 "heroes": [
                     {
                         "name": "Polaris",

@@ -53,7 +53,7 @@ export default function AntiheroSetItem(props) {
                 />
                 </>
             }>
-            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:10}}/>
+            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:11}}/>
         </ListItem>
     )
 }

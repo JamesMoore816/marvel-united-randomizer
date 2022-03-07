@@ -77,3 +77,13 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.set-logo {
+  max-width: 80%;
+  max-height: 35px;
+  vertical-align:middle;
+}
+
+/* .span-bg {
+  background-color: white;
+} */

@@ -108,15 +108,16 @@ export default function Set(props) {
 
     return (
         <div className="accordion-div">
-            <Accordion disableGutters className="set-accordion" elevation={0} square sx={{ width: 420 }}>
+            <Accordion disableGutters className="set-accordion" elevation={0} square sx={{ width: 420, paddingBottom:0.5 }}>
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon sx={{color:"white", backgroundColor:"#444444", borderRadius:"100%"}}/>}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{ height: "auto", backgroundColor: "#EEEEEE", borderStyle: "solid", borderWidth: 1, borderColor: "#DDDDDD" }}
+                    sx={{ height: "65px", backgroundImage:`url(${props.banner})`, backgroundSize:"cover", backgroundPosition:"0 -40px, 0 0", backgroundOpacity:"50%", borderStyle: "solid", borderWidth: 1, borderColor: "#BBBBBB" }}
                 >
-                    <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar>
-                    <Typography sx={{ marginTop: 0.9 }}>{props.title}</Typography>
+                    {/* <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar> */}
+                    <Typography sx={{color:"white", fontSize:"20px", backgroundColor:"black", padding:"0px 6px 3px 6px" }}>{props.title}</Typography>
+                    {/* <img className="set-logo" src={props.logo} alt={props.title}/> */}
                 </AccordionSummary>
                 <AccordionDetails sx={{ padding: 0 }}>
                     <List sx={{ padding: 0 }}>

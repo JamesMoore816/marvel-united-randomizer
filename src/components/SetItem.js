@@ -65,7 +65,7 @@ export default function SetItem(props) {
                     sx={{'&.Mui-checked': {color: checkColor}}}
                 />
             }>
-            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:9}}/>
+            <ListItemText primary={`${props.entry.name}`} sx={{marginLeft:11}}/>
         </ListItem>
         <Divider />
         </>
