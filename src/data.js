@@ -63,35 +63,35 @@ export const data = [
                 "locations": [
                     {
                         "name": "Stark Labs",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Avengers Mansion",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "New York Police Headquarters",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Times Square",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Central Park",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Avengers Tower",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "S.H.I.E.L.D. Helicarrier",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "S.H.I.E.L.D. Headquarters",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -133,27 +133,27 @@ export const data = [
                 "locations": [
                     {
                         "name": "Brooklyn Bridge",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Daily Bugle",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Osborn Laboratories",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Oscorp Tower",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Queens",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Midtown High School",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -231,27 +231,27 @@ export const data = [
                 "locations": [
                     {
                         "name": "Golden City",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Royal Palace",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Great Mound",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Shuri's Lab",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Warrior Falls",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Jabari Village",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -293,27 +293,27 @@ export const data = [
                 "locations": [
                     {
                         "name": "Heimdall's Observatory",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Odin's Vault",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Bifrost Bridge",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Asgardian Palace",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Throne Room",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Valhalla",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -355,27 +355,27 @@ export const data = [
                 "locations": [
                     {
                         "name": "The Milano",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Knowhere",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Xandar",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Morag",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Collector's Museum",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Kyln",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -411,27 +411,27 @@ export const data = [
                 "locations": [
                     {
                         "name": "Hala",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Asgard",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Vormir",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Nidavellir",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Sanctum Sanctorum",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "New York",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -725,35 +725,35 @@ export const data = [
                 "locations": [
                     {
                         "name": "Xavier Institute for Higher Learning",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Hangar Bay",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "X-Jet",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Asteroid M",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Genosha",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Muir Island (Mutant Research Facility)",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Weapon X Facility",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Sentinel Space Station",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     }
                 ],
                 "antiheroes": [
@@ -811,19 +811,19 @@ export const data = [
                 "locations": [
                     {
                         "name": "Excalibur Lighthouse",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "The Savage Land",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Madripoor",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Mojoverse",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     }
                 ],
                 "antiheroes": []
@@ -870,19 +870,19 @@ export const data = [
                 "locations": [
                     {
                         "name": "Krakoa",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Chandrilar (Shi'ar Empire)",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Limbo",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Hellfire Club Building",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -924,19 +924,19 @@ export const data = [
                 "locations": [
                     {
                         "name": "Adirondack Mountains",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Morlock Tunnels",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Murderworld",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Stryfe's Secret Base",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -972,11 +972,11 @@ export const data = [
                 "locations": [
                     {
                         "name": "Starlight Citadel",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Apocalypse's Pyramid",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     }
                 ],
                 "antiheroes": [
@@ -1033,15 +1033,15 @@ export const data = [
                 "locations": [
                     {
                         "name": "Cape Citadel",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Island M",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Xavier's School for Gifted Youngsters",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": []
@@ -1142,7 +1142,7 @@ export const data = [
                 "locations": [
                     {
                         "name": "Deadpool's Apartment",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     }
                 ],
                 "antiheroes": [
@@ -1189,19 +1189,19 @@ export const data = [
                 "locations": [
                     {
                         "name": "4 Yancy Street",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Baxter Building",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Mount Wundagore",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                     {
                         "name": "Latveria",
-                        "image": "/images/placeholder.png"
+                        "image": "/images/placeholderloc.png"
                     },
                 ],
                 "antiheroes": [
