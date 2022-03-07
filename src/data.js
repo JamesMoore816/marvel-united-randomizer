@@ -39,59 +39,59 @@ export const data = [
                     },
                     {
                         "name": "Wasp",
-                        "image": "/images/Wasp.png",
+                        "image": "/images/portraits/Wasp.jpg",
                         "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Red Skull",
-                        "image": "/images/RedSkull.png",
+                        "image": "/images/portraits/RedSkull.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Ultron",
-                        "image": "/images/Ultron.png",
+                        "image": "/images/portraits/Ultron.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Taskmaster",
-                        "image": "/images/Taskmaster.png",
+                        "image": "/images/portraits/Taskmaster.jpg",
                         "dupecheckid": ""
                     },
                 ],
                 "locations": [
                     {
                         "name": "Stark Labs",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Avengers Mansion",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "New York Police Headquarters",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Times Square",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Central Park",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Avengers Tower",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "S.H.I.E.L.D. Helicarrier",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "S.H.I.E.L.D. Headquarters",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -104,7 +104,7 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Spider-Man",
-                        "image": "/images/Spider-Man.png",
+                        "image": "/images/portraits/Spider-Man.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -119,7 +119,7 @@ export const data = [
                     },
                     {
                         "name": "Spider-Ham",
-                        "image": "/images/Spider-Ham.png",
+                        "image": "/images/portraits/Spider-Ham.jpg",
                         "dupecheckid": ""
                     },
                 ],
@@ -133,27 +133,27 @@ export const data = [
                 "locations": [
                     {
                         "name": "Brooklyn Bridge",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Daily Bugle",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Osborn Laboratories",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Oscorp Tower",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Queens",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Midtown High School",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -182,7 +182,7 @@ export const data = [
                     },
                     {
                         "name": "Vulture",
-                        "image": "/images/Vulture.png",
+                        "image": "/images/portraits/Vulture.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -192,7 +192,7 @@ export const data = [
                     },
                     {
                         "name": "Sandman",
-                        "image": "/images/Sandman.png",
+                        "image": "/images/portraits/Sandman.jpg",
                         "dupecheckid": ""
                     },
                 ],
@@ -212,12 +212,12 @@ export const data = [
                     },
                     {
                         "name": "Winter Soldier",
-                        "image": "/images/WinterSoldier.png",
+                        "image": "/images/portraits/WinterSoldier.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Shuri",
-                        "image": "/images/Shuri.png",
+                        "image": "/images/portraits/Shuri.jpg",
                         "dupecheckid": ""
                     },
                 ],
@@ -231,27 +231,27 @@ export const data = [
                 "locations": [
                     {
                         "name": "Golden City",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Royal Palace",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Great Mound",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Shuri's Lab",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Warrior Falls",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Jabari Village",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -264,12 +264,12 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Thor",
-                        "image": "/images/Thor.png",
+                        "image": "/images/portraits/Thor.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Valkyrie",
-                        "image": "/images/Valkyrie.png",
+                        "image": "/images/portraits/Valkyrie.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -293,27 +293,27 @@ export const data = [
                 "locations": [
                     {
                         "name": "Heimdall's Observatory",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Odin's Vault",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Bifrost Bridge",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Asgardian Palace",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Throne Room",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Valhalla",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -326,12 +326,12 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Star-Lord",
-                        "image": "/images/Star-Lord.png",
+                        "image": "/images/portraits/Star-Lord.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Rocket",
-                        "image": "/images/Rocket.png",
+                        "image": "/images/portraits/Rocket.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -348,34 +348,34 @@ export const data = [
                 "villains": [
                     {
                         "name": "Ronan",
-                        "image": "/images/Ronan.png",
+                        "image": "/images/portraits/Ronan.jpg",
                         "dupecheckid": ""
                     },
                 ],
                 "locations": [
                     {
                         "name": "The Milano",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Knowhere",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Xandar",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Morag",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Collector's Museum",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Kyln",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -389,7 +389,7 @@ export const data = [
                 "villains": [
                     {
                         "name": "Thanos",
-                        "image": "/images/Thanos.png",
+                        "image": "/images/portraits/Thanos.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -404,34 +404,34 @@ export const data = [
                     },
                     {
                         "name": "Proxima Midnight",
-                        "image": "/images/ProximaMidnight.png",
+                        "image": "/images/portraits/ProximaMidnight.jpg",
                         "dupecheckid": ""
                     },
                 ],
                 "locations": [
                     {
                         "name": "Hala",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Asgard",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Vormir",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Nidavellir",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Sanctum Sanctorum",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "New York",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -449,12 +449,12 @@ export const data = [
                     },
                     {
                         "name": "Vision",
-                        "image": "/images/Vision.png",
+                        "image": "/images/portraits/Vision.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Scarlet Witch",
-                        "image": "/images/ScarletWitch.png",
+                        "image": "/images/portraits/ScarletWitch.jpg",
                         "dupecheckid": "Wanda Maximoff"
                     },
                     {
@@ -464,7 +464,7 @@ export const data = [
                     },
                     {
                         "name": "War Machine",
-                        "image": "/images/WarMachine.png",
+                        "image": "/images/portraits/WarMachine.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -474,7 +474,7 @@ export const data = [
                     },
                     {
                         "name": "Squirrel Girl",
-                        "image": "/images/SquirrelGirl.png",
+                        "image": "/images/portraits/SquirrelGirl.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -514,7 +514,7 @@ export const data = [
                     },
                     {
                         "name": "Punisher",
-                        "image": "/images/Punisher.png",
+                        "image": "/images/portraits/Punisher.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -529,22 +529,22 @@ export const data = [
                     },
                     {
                         "name": "Spider-Woman",
-                        "image": "/images/Spider-Woman.png",
+                        "image": "/images/portraits/Spider-Woman.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Shang Chi",
-                        "image": "/images/ShangChi.png",
+                        "image": "/images/portraits/ShangChi.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Spider-Man 2099",
-                        "image": "/images/Spider-Man2099.png",
+                        "image": "/images/portraits/Spider-Man2099.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Venom",
-                        "image": "/images/Venom.png",
+                        "image": "/images/portraits/Venom.jpg",
                         "dupecheckid": "Eddie Brock"
                     },
                     {
@@ -559,7 +559,7 @@ export const data = [
                     },
                     {
                         "name": "She-Hulk",
-                        "image": "/images/She-Hulk.png",
+                        "image": "/images/portraits/She-Hulk.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -604,7 +604,7 @@ export const data = [
                     },
                     {
                         "name": "Yondu",
-                        "image": "/images/Yondu.png",
+                        "image": "/images/portraits/Yondu.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -636,7 +636,7 @@ export const data = [
                     },
                     {
                         "name": "Rhino",
-                        "image": "/images/Rhino.png",
+                        "image": "/images/portraits/Rhino.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -656,7 +656,7 @@ export const data = [
                     },
                     {
                         "name": "Venom",
-                        "image": "/images/Venom.png",
+                        "image": "/images/portraits/Venom.jpg",
                         "dupecheckid": "Eddie Brock"
                     },
                     {
@@ -681,7 +681,7 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Wolverine",
-                        "image": "",
+                        "image": "/images/portraits/Wolverine.jpg",
                         "dupecheckid": "Logan"
                     },
                     {
@@ -691,7 +691,7 @@ export const data = [
                     },
                     {
                         "name": "Storm",
-                        "image": "",
+                        "image": "/images/portraits/Storm.jpg",
                         "dupecheckid": "Ororo Munroe"
                     },
                     {
@@ -706,14 +706,14 @@ export const data = [
                     },
                     {
                         "name": "Professor X",
-                        "image": "",
+                        "image": "/images/portraits/ProfessorX.jpg",
                         "dupecheckid": ""
                     }
                 ],
                 "villains": [
                     {
                         "name": "Sabretooth",
-                        "image": "",
+                        "image": "/images/portraits/Sabretooth.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -725,35 +725,35 @@ export const data = [
                 "locations": [
                     {
                         "name": "Xavier Institute for Higher Learning",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Hangar Bay",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "X-Jet",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Asteroid M",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Genosha",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Muir Island (Mutant Research Facility)",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Weapon X Facility",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Sentinel Space Station",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     }
                 ],
                 "antiheroes": [
@@ -782,12 +782,12 @@ export const data = [
                     },
                     {
                         "name": "Rogue",
-                        "image": "",
+                        "image": "/images/portraits/Rogue.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Psylocke",
-                        "image": "",
+                        "image": "/images/portraits/Psylocke.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -811,19 +811,19 @@ export const data = [
                 "locations": [
                     {
                         "name": "Excalibur Lighthouse",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "The Savage Land",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Madripoor",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Mojoverse",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     }
                 ],
                 "antiheroes": []
@@ -863,26 +863,26 @@ export const data = [
                 "villains": [
                     {
                         "name": "Sebastian Shaw",
-                        "image": "",
+                        "image": "/images/portraits/SebastianShaw.jpg",
                         "dupecheckid": ""
                     },
                 ],
                 "locations": [
                     {
                         "name": "Krakoa",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Chandrilar (Shi'ar Empire)",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Limbo",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Hellfire Club Building",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -910,33 +910,33 @@ export const data = [
                     },
                     {
                         "name": "Shatterstar",
-                        "image": "",
+                        "image": "/images/portraits/Shatterstar.jpg",
                         "dupecheckid": ""
                     },
                 ],
                 "villains": [
                     {
                         "name": "Stryfe",
-                        "image": "",
+                        "image": "/images/portraits/Stryfe.jpg",
                         "dupecheckid": ""
                     },
                 ],
                 "locations": [
                     {
                         "name": "Adirondack Mountains",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Morlock Tunnels",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Murderworld",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Stryfe's Secret Base",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -955,7 +955,7 @@ export const data = [
                     },
                     {
                         "name": "War",
-                        "image": "",
+                        "image": "/images/portraits/War.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -972,17 +972,17 @@ export const data = [
                 "locations": [
                     {
                         "name": "Starlight Citadel",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Apocalypse's Pyramid",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     }
                 ],
                 "antiheroes": [
                     {
                         "name": "Apocalypse",
-                        "image": ""
+                        "image": "/images/portraits/Apocalypse.jpg",
                     }
                 ]
             },
@@ -1021,27 +1021,27 @@ export const data = [
                 "villains": [
                     {
                         "name": "Quicksilver",
-                        "image": "",
+                        "image": "/images/portraits/QuicksilverFC.jpg",
                         "dupecheckid": "Pietro Maximoff"
                     },
                     {
                         "name": "Scarlet Witch",
-                        "image": "",
+                        "image": "/images/portraits/ScarletWitch.jpg",
                         "dupecheckid": "Wanda Maximoff"
                     },
                 ],
                 "locations": [
                     {
                         "name": "Cape Citadel",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Island M",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Xavier's School for Gifted Youngsters",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": []
@@ -1142,7 +1142,7 @@ export const data = [
                 "locations": [
                     {
                         "name": "Deadpool's Apartment",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     }
                 ],
                 "antiheroes": [
@@ -1176,12 +1176,12 @@ export const data = [
                     },
                     {
                         "name": "The Thing",
-                        "image": "",
+                        "image": "/images/portraits/Thing.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Silver Surfer",
-                        "image": "",
+                        "image": "/images/portraits/SilverSurfer.jpg",
                         "dupecheckid": ""
                     },
                 ],
@@ -1189,19 +1189,19 @@ export const data = [
                 "locations": [
                     {
                         "name": "4 Yancy Street",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Baxter Building",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Mount Wundagore",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                     {
                         "name": "Latveria",
-                        "image": ""
+                        "image": "/images/placeholder.png"
                     },
                 ],
                 "antiheroes": [
@@ -1220,7 +1220,7 @@ export const data = [
                 "heroes": [
                     {
                         "name": "Polaris",
-                        "image": "",
+                        "image": "/images/portraits/Polaris.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1230,7 +1230,7 @@ export const data = [
                     },
                     {
                         "name": "Strong Guy",
-                        "image": "",
+                        "image": "/images/portraits/StrongGuy.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1250,7 +1250,7 @@ export const data = [
                     },
                     {
                         "name": "Sunspot",
-                        "image": "",
+                        "image": "/images/portraits/Sunspot.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1265,7 +1265,7 @@ export const data = [
                     },
                     {
                         "name": "Warpath",
-                        "image": "",
+                        "image": "/images/portraits/Warpath.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1275,12 +1275,12 @@ export const data = [
                     },
                     {
                         "name": "Sunfire",
-                        "image": "",
+                        "image": "/images/portraits/Sunfire.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Wolfsbane",
-                        "image": "",
+                        "image": "/images/portraits/Wolfsbane.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1310,12 +1310,12 @@ export const data = [
                     },
                     {
                         "name": "Weapon X",
-                        "image": "",
+                        "image": "/images/portraits/WeaponX.jpg",
                         "dupecheckid": "Logan"
                     },
                     {
                         "name": "Pixie",
-                        "image": "",
+                        "image": "/images/portraits/Pixie.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1325,7 +1325,7 @@ export const data = [
                     },
                     {
                         "name": "X-23",
-                        "image": "",
+                        "image": "/images/portraits/X-23.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1335,7 +1335,7 @@ export const data = [
                     },
                     {
                         "name": "Warlock",
-                        "image": "",
+                        "image": "/images/portraits/Warlock.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1355,7 +1355,7 @@ export const data = [
                     },
                     {
                         "name": "Puck",
-                        "image": "",
+                        "image": "/images/portraits/Puck.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1365,12 +1365,12 @@ export const data = [
                     },
                     {
                         "name": "Snowbird",
-                        "image": "",
+                        "image": "/images/portraits/Snowbird.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Sasquatch",
-                        "image": "",
+                        "image": "/images/portraits/Sasquatch.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1390,7 +1390,7 @@ export const data = [
                     },
                     {
                         "name": "Storm (Mohawk)",
-                        "image": "",
+                        "image": "/images/portraits/StormMohawk.jpg",
                         "dupecheckid": "Ororo Munroe"
                     },
                     {
@@ -1402,7 +1402,7 @@ export const data = [
                 "villains": [
                     {
                         "name": "Shadow King",
-                        "image": "",
+                        "image": "/images/portraits/ShadowKing.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1427,12 +1427,12 @@ export const data = [
                     },
                     {
                         "name": "Sauron",
-                        "image": "",
+                        "image": "/images/portraits/Sauron.jpg",
                         "dupecheckid": ""
                     },
                     {
                         "name": "Silver Samurai",
-                        "image": "",
+                        "image": "/images/portraits/SilverSamurai.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1466,8 +1466,8 @@ export const data = [
                         "dupecheckid": ""
                     },
                     {
-                        "name": "Super Skrull",
-                        "image": "",
+                        "name": "Super-Skrull",
+                        "image": "/images/portraits/Super-Skrull.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1477,7 +1477,7 @@ export const data = [
                     },
                     {
                         "name": "Toad",
-                        "image": "",
+                        "image": "/images/portraits/Toad.jpg",
                         "dupecheckid": ""
                     },
                     {
@@ -1487,7 +1487,7 @@ export const data = [
                     },
                     {
                         "name": "Pyro",
-                        "image": "",
+                        "image": "/images/portraits/Pyro.jpg",
                         "dupecheckid": ""
                     },
                 ],
@@ -1510,7 +1510,7 @@ export const data = [
                     },
                     {
                         "name": "Spiral",
-                        "image": "",
+                        "image": "/images/portraits/Spiral.jpg",
                         "dupecheckid": ""
                     },
                     {
