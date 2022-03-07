@@ -113,7 +113,7 @@ export default function Set(props) {
                     expandIcon={<ExpandMoreIcon sx={{color:"white", backgroundColor:"#444444", borderRadius:"100%"}}/>}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{ height: "65px", backgroundImage:`url(${props.banner})`, backgroundSize:"100%", backgroundPosition:"0 -40px, 0 0", backgroundOpacity:"50%", borderStyle: "solid", borderWidth: 1, borderColor: "#BBBBBB" }}
+                    sx={{ height: "65px", backgroundImage:`url(${props.banner})`, backgroundSize:"100%", backgroundPosition:"0 -40px, 0 0", backgroundRepeat:"no-repeat", borderStyle: "solid", borderWidth: 1, borderColor: "#BBBBBB" }}
                 >
                     {/* <ListItemAvatar><Avatar variant="square" src={props.image} /></ListItemAvatar> */}
                     <Typography sx={{color:"white", fontSize:"20px", backgroundColor:"black", padding:"0px 6px 3px 6px" }}>{props.title}</Typography>
