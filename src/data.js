@@ -585,6 +585,7 @@ export const data = [
                         "name": "Quicksilver",
                         "image": "/images/portraits/Quicksilver.jpg",
                         "dupecheckid": "Pietro Maximoff"
+                    },
                     {
                         "name": "Nebula",
                         "image": "/images/portraits/Nebula.jpg",
