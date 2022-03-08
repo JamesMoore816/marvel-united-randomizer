@@ -1031,7 +1031,7 @@ export const data = [
                     },
                     {
                         "name": "Scarlet Witch",
-                        "image": "/images/portraits/ScarletWitch.jpg",
+                        "image": "/images/portraits/ScarletWitchFC.jpg",
                         "dupecheckid": "Wanda Maximoff"
                     },
                 ],
