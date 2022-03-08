@@ -1,19 +1,13 @@
 import List from '@mui/material/List';
 import ListSubheader from '@mui/material/ListSubheader';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Checkbox from '@mui/material/Checkbox';
-import Avatar from '@mui/material/Avatar';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { useState } from 'react'
-import SetItem from './SetItem'
 import MemoizedSetItem from './SetItem'
-import AntiheroSetItem from './AntiheroSetItem'
 import MemoizedAntiheroSetItem from './AntiheroSetItem'
-import Divider from '@mui/material/Divider';
 import React from 'react';
 
 

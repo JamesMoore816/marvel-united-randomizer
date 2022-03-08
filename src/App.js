@@ -12,7 +12,7 @@ function App() {
   const [heroesChecked, setHeroesChecked] = useState([1])
   const [villainsChecked, setVillainsChecked] = useState([1])
   const [locationsChecked, setLocationsChecked] = useState([1])
-  const [locationsOption, setLocationsOption] = useState(false)
+  const [locationsOption, setLocationsOption] = useState(true)
   // const [allowDupes, setAllowDupes] = useState(false)
   const [numHeroes, setNumHeroes] = useState("2")
   const [view, setView] = useState("main")
@@ -27,8 +27,6 @@ function App() {
   const handleTooltipOpen = () => {
     setOpen(true);
   };
-
-  console.log(data[0].sets)
 
   useEffect(() => {
     for (let i=0; i < data[0].sets.length; i++) {
