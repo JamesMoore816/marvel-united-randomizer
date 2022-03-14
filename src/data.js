@@ -949,22 +949,7 @@ export const data = [
                 "heroes": [],
                 "villains": [
                     {
-                        "name": "Famine",
-                        "image": "/images/portraits/Famine.jpg",
-                        "dupecheckid": ""
-                    },
-                    {
-                        "name": "War",
-                        "image": "/images/portraits/War.jpg",
-                        "dupecheckid": ""
-                    },
-                    {
-                        "name": "Pestilence",
-                        "image": "/images/portraits/Pestilence.jpg",
-                        "dupecheckid": ""
-                    },
-                    {
-                        "name": "Death",
+                        "name": "The Four Horsemen",
                         "image": "/images/portraits/Death.jpg",
                         "dupecheckid": "Warren Worthington III"
                     },
@@ -1476,20 +1461,25 @@ export const data = [
                         "dupecheckid": ""
                     },
                     {
-                        "name": "Toad",
-                        "image": "/images/portraits/Toad.jpg",
-                        "dupecheckid": ""
-                    },
-                    {
-                        "name": "Blob",
-                        "image": "/images/portraits/Blob.jpg",
-                        "dupecheckid": ""
-                    },
-                    {
-                        "name": "Pyro",
+                        "name": "The Brotherhood",
                         "image": "/images/portraits/Pyro.jpg",
                         "dupecheckid": ""
                     },
+                    // {
+                    //     "name": "Toad",
+                    //     "image": "/images/portraits/Toad.jpg",
+                    //     "dupecheckid": ""
+                    // },
+                    // {
+                    //     "name": "Blob",
+                    //     "image": "/images/portraits/Blob.jpg",
+                    //     "dupecheckid": ""
+                    // },
+                    // {
+                    //     "name": "Pyro",
+                    //     "image": "/images/portraits/Pyro.jpg",
+                    //     "dupecheckid": ""
+                    // },
                 ],
                 "locations": [],
                 "antiheroes": [
