@@ -583,6 +583,11 @@ export const data = [
                         "dupecheckid": ""
                     },
                     {
+                        "name": "Quicksilver",
+                        "image": "/images/portraits/Quicksilver.jpg",
+                        "dupecheckid": "Pietro Maximoff"
+                    },
+                    {
                         "name": "Nebula",
                         "image": "/images/portraits/Nebula.jpg",
                         "dupecheckid": ""
@@ -1011,7 +1016,7 @@ export const data = [
                     },
                     {
                         "name": "Scarlet Witch",
-                        "image": "/images/portraits/ScarletWitch.jpg",
+                        "image": "/images/portraits/ScarletWitchFC.jpg",
                         "dupecheckid": "Wanda Maximoff"
                     },
                 ],
