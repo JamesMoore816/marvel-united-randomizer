@@ -1009,15 +1009,15 @@ export const data = [
                     },
                 ],
                 "villains": [
+                    // {
+                    //     "name": "Quicksilver",
+                    //     "image": "/images/portraits/QuicksilverFC.jpg",
+                    //     "dupecheckid": "Pietro Maximoff"
+                    // },
                     {
-                        "name": "Quicksilver",
-                        "image": "/images/portraits/QuicksilverFC.jpg",
-                        "dupecheckid": "Pietro Maximoff"
-                    },
-                    {
-                        "name": "Scarlet Witch",
+                        "name": "Scarlet Witch & Quicksilver",
                         "image": "/images/portraits/ScarletWitchFC.jpg",
-                        "dupecheckid": "Wanda Maximoff"
+                        "dupecheckid": ["Wanda Maximoff", "Pietro Maximoff"]
                     },
                 ],
                 "locations": [
@@ -1175,7 +1175,13 @@ export const data = [
                         "dupecheckid": ""
                     },
                 ],
-                "villains": [],
+                "villains": [
+                    {
+                        "name": "Super-Skrull",
+                        "image": "/images/portraits/Super-Skrull.jpg",
+                        "dupecheckid": ""
+                    },
+                ],
                 "locations": [
                     {
                         "name": "4 Yancy Street",
@@ -1453,11 +1459,6 @@ export const data = [
                     {
                         "name": "Avalanche",
                         "image": "/images/portraits/Avalanche.jpg",
-                        "dupecheckid": ""
-                    },
-                    {
-                        "name": "Super-Skrull",
-                        "image": "/images/portraits/Super-Skrull.jpg",
                         "dupecheckid": ""
                     },
                     {
